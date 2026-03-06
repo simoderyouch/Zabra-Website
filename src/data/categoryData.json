@@ -1,0 +1,212 @@
+{
+    "olive-oil": {
+        "title": "EXTRA VIRGIN OLIVE OIL",
+        "image": "/images/oil_product.png",
+        "sideNav": [
+            {
+                "id": "order",
+                "label": "Order"
+            },
+            {
+                "id": "discover",
+                "label": "Discover"
+            },
+            {
+                "id": "why-zabira",
+                "label": "Why ZABRA"
+            },
+            {
+                "id": "recipe",
+                "label": "Recipes"
+            },
+            {
+                "id": "orders",
+                "label": "My Orders"
+            }
+        ],
+        "categoryLabel": "Extra Virgin Olive Oil",
+        "extraction": "Cold extraction",
+        "texture": "Smooth, fruity",
+        "formats": "250 ml · 500 ml · 1 L · 5 L",
+        "acidityLevel": "< 0.8%",
+        "conditionement": "Food-grade steel canister",
+        "conservation": "24 months — cool place",
+        "variants": [
+            {
+                "volume": "250 ml",
+                "price": "Not specified"
+            },
+            {
+                "volume": "500 ml",
+                "price": "Not specified"
+            },
+            {
+                "volume": "1 L",
+                "price": "Not specified"
+            },
+            {
+                "volume": "5 L",
+                "price": "Not specified"
+            }
+        ],
+        "specialVariants": [],
+        "pages": {
+            "discover": {
+                "title": "Discover Our Olive Oil",
+                "content": "<p>Our extra virgin olive oil comes from carefully selected olives harvested during the <strong>second season</strong> — the precise moment when green, red, and black varieties reach their perfect balance of maturity. This meticulous timing ensures an oil that is harmonious, stable, and generously aromatic.</p><h2>A Unique Blend</h2><p>ZABRA blends <strong>Arbequina</strong> and <strong>Local</strong> olive varieties to achieve a stable golden color and a smooth, subtly fruity flavor profile with a peppery finish. Each batch is pressed within hours of harvest to preserve the full freshness of the aromas.</p><h2>Nutritional Profile</h2><p>Naturally rich in <strong>polyphenols</strong> and <strong>monounsaturated fatty acids</strong>, our olive oil actively contributes to:</p><ul><li>Cardiovascular system protection</li><li>Reduction of LDL cholesterol</li><li>A natural supply of antioxidants</li><li>Better absorption of fat-soluble vitamins (A, D, E, K)</li></ul><h2>Tasting Tips</h2><p>To reveal its full richness, drizzle it over warm bread, a fresh salad, or a tagine at the end of cooking. It elevates every dish without overpowering the flavors.</p>"
+            },
+            "why-zabira": {
+                "title": "Why Choose ZABRA?",
+                "content": "<p>At ZABRA, every bottle tells the story of an <strong>artisanal craft</strong> passed down through generations. We don't mass-produce — we select.</p><h2>Second Season Harvest</h2><p>Unlike early industrial harvests, we wait for the <strong>second season</strong> of maturation. This longer process allows the olives to develop superior aromatic complexity, with notes of ripe fruit, fresh grass, and sweet almond.</p><h2>Supervised Extraction in Beni Mellal</h2><p>Our olives are cold-pressed in the <strong>mills of Beni Mellal</strong>, a region renowned for centuries for the exceptional quality of its olive groves. Each extraction is personally supervised to guarantee acidity below 0.8%.</p><h2>Packaging Designed for Quality</h2><p>Our choice of <strong>white food-grade steel canisters</strong> is deliberate:</p><ul><li><strong>Total protection</strong> against light and UV rays that degrade polyphenols</li><li><strong>Thermal insulation</strong> that preserves freshness and aromas</li><li><strong>Durable material</strong> that is 100% recyclable</li></ul><p>This is not simply olive oil. It is the result of rigorous selection, an exceptional terroir, and a personal commitment to excellence.</p>"
+            },
+            "recipe": {
+                "title": "Olive Oil Recipes",
+                "content": "<h2>Quick Mediterranean Marinade</h2><p>A simple, fragrant marinade to elevate grilled meats and vegetables.</p><ul><li><strong>4 tbsp</strong> ZABRA extra virgin olive oil</li><li>3 finely minced garlic cloves</li><li>1 tsp ground cumin</li><li>Juice of one fresh lemon</li><li>Salt and freshly ground black pepper</li></ul><p>Mix all ingredients and marinate your meats or vegetables for <strong>20 to 30 minutes</strong>. Grill over high heat for perfect caramelization.</p><h2>Daily Wellness Ritual</h2><p>One tablespoon of extra virgin olive oil every morning on an empty stomach offers remarkable benefits:</p><ul><li>Supports <strong>digestion</strong> and protects the gastric lining</li><li>Promotes <strong>heart health</strong> through omega-9 fatty acids</li><li>Hydrates skin from within for a radiant complexion</li></ul><h2>ZABRA Signature Vinaigrette</h2><p>Emulsify <strong>3 parts ZABRA oil</strong> with 1 part balsamic vinegar, a touch of Dijon mustard, and a pinch of sea salt. Perfect over an heirloom tomato salad or fresh mozzarella.</p>"
+            },
+            "orders": {
+                "title": "Your Orders",
+                "content": "<p>Easily manage your ZABRA extra virgin olive oil purchases from your personal account.</p><h2>What You Can Do</h2><ul><li><strong>View</strong> your complete order history</li><li><strong>Track</strong> your shipments in real time</li><li><strong>Reorder</strong> your favorite sizes with a single click</li><li><strong>Contact</strong> our customer service for any questions</li></ul><p>Log in to your account to access all these features. If you don't have an account yet, sign-up is quick and free.</p>"
+            }
+        }
+    },
+    "argan-oil": {
+        "title": "PURE ARGAN OIL",
+        "image": "/images/argan_product.png",
+        "sideNav": [
+            {
+                "id": "order",
+                "label": "Order"
+            },
+            {
+                "id": "discover",
+                "label": "Discover"
+            },
+            {
+                "id": "why-zabira",
+                "label": "Why ZABRA"
+            },
+            {
+                "id": "recipe",
+                "label": "Recipes & Care"
+            },
+            {
+                "id": "orders",
+                "label": "My Orders"
+            }
+        ],
+        "categoryLabel": "Pure Argan Oil",
+        "extraction": "Cold pressed",
+        "texture": "Light · Nutty",
+        "formats": "50 ml · 100 ml · 250 ml · 500 ml",
+        "acidityLevel": "Not applicable",
+        "conditionement": "Opaque glass / Food-grade steel",
+        "conservation": "24 months — cool place",
+        "variants": [
+            {
+                "volume": "250 ml (Culinary)",
+                "price": "Not specified"
+            },
+            {
+                "volume": "500 ml (Culinary)",
+                "price": "Not specified"
+            }
+        ],
+        "specialVariants": [
+            {
+                "title": "COSMETIC ARGAN",
+                "volume": "50 ml",
+                "price": "Not specified",
+                "category": "Cosmetic"
+            },
+            {
+                "title": "COSMETIC ARGAN",
+                "volume": "100 ml",
+                "price": "Not specified",
+                "category": "Cosmetic"
+            }
+        ],
+        "pages": {
+            "discover": {
+                "title": "Discover Argan Oil",
+                "content": "<p>ZABRA argan oil is extracted from the fruits of <strong>ancestral argan trees</strong> in the Souss region of southwestern Morocco — a millennia-old tree classified as a UNESCO World Heritage species. Our oil is available in two distinct versions, each with its own unique properties.</p><h2>Cosmetic Argan</h2><p>Obtained through cold pressing <strong>without roasting</strong>, this version retains the full range of its active compounds. Its light, non-greasy texture absorbs quickly into the skin for deep hydration. It is exceptionally rich in:</p><ul><li><strong>Vitamin E</strong> — a powerful anti-aging antioxidant</li><li><strong>Essential fatty acids</strong> (omega-6 and omega-9)</li><li><strong>Schottenol</strong> — a rare molecule that promotes cellular regeneration</li></ul><h2>Culinary Argan</h2><p>The kernels are delicately <strong>roasted</strong> before pressing, revealing an intense nutty flavor and a deep amber color. This oil elevates your dishes — a simple drizzle over couscous, a salad, or grilled fish transforms every bite into a unique taste experience.</p><h2>A Biodiversity Treasure</h2><p>Our argan trees grow in the protected forests of <strong>Essaouira</strong>, classified as a biosphere reserve. Each tree produces barely a few liters of oil per year, giving every bottle exceptional value.</p>"
+            },
+            "why-zabira": {
+                "title": "The ZABRA Argan Excellence",
+                "content": "<p>Argan oil is one of the most counterfeited products in the world. At ZABRA, we have made <strong>absolute authenticity</strong> our core promise.</p><h2>Personal Kernel Selection</h2><p>Every batch of kernels is <strong>inspected and hand-selected</strong>. We systematically discard any kernels that are damaged, immature, or of insufficient quality. This rigorous sorting guarantees a pure oil, free from bitterness or off-odors.</p><h2>Supervised Cold Pressing</h2><p>Extraction is done exclusively through <strong>mechanical cold pressing</strong>, without chemical solvents or excessive heat. The temperature never exceeds 45°C, preserving the full spectrum of nutrients and active compounds.</p><h2>Zero Waste Philosophy</h2><p>Our process valorizes <strong>100% of the argan fruit</strong>:</p><ul><li><strong>Pure oil</strong> — the premium product you receive</li><li><strong>Argan paste (Amlou)</strong> — a delicious spread with honey and almonds</li><li><strong>Dry scrub</strong> — a natural body exfoliant</li></ul><p>Choosing ZABRA means supporting a transparent supply chain that respects the land, local communities, and the environment.</p>"
+            },
+            "recipe": {
+                "title": "Uses & Care Routines",
+                "content": "<h2>Restorative Hair Mask</h2><p>A deep treatment to revive dry and damaged hair.</p><ul><li><strong>2 tbsp</strong> ZABRA cosmetic argan oil</li><li>1 tbsp pure honey</li><li>1 egg yolk</li></ul><p>Mix and apply to damp hair, from roots to ends. Wrap in a warm towel and leave for <strong>30 minutes</strong>. Rinse with a gentle shampoo. Repeat once a week.</p><h2>Anti-Aging Face Serum</h2><p>Apply <strong>3 to 4 drops</strong> of cosmetic argan oil to a clean, slightly damp face, morning and evening. Massage with upward circular motions. The <strong>Schottenol</strong> naturally present in the oil stimulates cellular regeneration and visibly reduces fine lines.</p><h2>Hand & Nail Care</h2><p>Massage a few drops into your hands and cuticles before bed. Argan oil strengthens brittle nails and deeply softens dry hands.</p><h2>In the Kitchen: Amlou</h2><p>Blend roasted almonds with ZABRA culinary argan oil and honey until you get a smooth, creamy paste. This traditional Berber recipe is enjoyed at breakfast, spread on warm bread — an absolute delight.</p>"
+            },
+            "orders": {
+                "title": "Your Orders",
+                "content": "<p>Find all your ZABRA argan oil purchases — both cosmetic and culinary — in your personal account.</p><h2>What You Can Do</h2><ul><li><strong>View</strong> your order history</li><li><strong>Track</strong> your shipments in real time</li><li><strong>Reorder</strong> your favorite products with one click</li><li><strong>Manage</strong> your delivery addresses</li></ul><p>Log in to your account to access all these features. Our customer service team is also available to answer your questions.</p>"
+            }
+        }
+    },
+    "dates": {
+        "title": "MEDJOOL DATES",
+        "image": "/images/date_product.png",
+        "sideNav": [
+            {
+                "id": "order",
+                "label": "Order"
+            },
+            {
+                "id": "discover",
+                "label": "Discover"
+            },
+            {
+                "id": "why-zabira",
+                "label": "Why ZABRA"
+            },
+            {
+                "id": "recipe",
+                "label": "Recipes"
+            },
+            {
+                "id": "orders",
+                "label": "My Orders"
+            }
+        ],
+        "categoryLabel": "Premium Medjool Dates",
+        "extraction": "Hand-harvested",
+        "texture": "Soft, caramelized",
+        "formats": "500 g",
+        "acidityLevel": "Not applicable",
+        "conditionement": "Premium durable packaging",
+        "conservation": "24 months — cool place",
+        "variants": [
+            {
+                "volume": "500 g",
+                "price": "Not specified"
+            }
+        ],
+        "specialVariants": [
+            {
+                "title": "PISTA-VELVET",
+                "volume": "500 g",
+                "price": "Not specified",
+                "category": "Gourmet — Pistachio-stuffed dates"
+            }
+        ],
+        "pages": {
+            "discover": {
+                "title": "Discover Medjool Dates",
+                "content": "<p>The Medjool is considered the <strong>queen of dates</strong> — a noble and generous fruit cultivated for millennia in the oases of the Moroccan desert. Our dates come from the <strong>family palm groves of Errachidia</strong>, in the Ziz Valley, where the arid climate and rich soils create ideal conditions for an exceptional fruit.</p><h2>A Unique Flavor Profile</h2><p>Each ZABRA Medjool date offers a <strong>soft, melt-in-your-mouth texture</strong>, with naturally caramelized notes and an intense sweetness that never becomes cloying. Its generous size and thin skin distinguish it from all other varieties.</p><h2>Nutritional Benefits</h2><p>Far more than a treat, the Medjool date is a true <strong>superfood</strong>:</p><ul><li><strong>Magnesium & Potassium</strong> — help regulate blood pressure</li><li><strong>Natural fiber</strong> — promotes healthy digestion</li><li><strong>Quick energy</strong> — ideal before or after exercise</li><li><strong>Zero cholesterol</strong> and zero added fats</li></ul><p>It's the perfect snack — natural, nourishing, and absolutely delicious.</p>"
+            },
+            "why-zabira": {
+                "title": "The ZABRA Difference",
+                "content": "<p>In a market flooded with dates of varying quality, ZABRA stands as a benchmark for <strong>selection and traceability</strong>.</p><h2>Second Season Harvest</h2><p>We wait for the <strong>second season</strong> of maturation — the moment when natural sugar content reaches its peak. This patience yields a date that is sweeter, more melt-in-your-mouth, and more aromatic than early harvests.</p><h2>Piece-by-Piece Selection</h2><p>Every single date is <strong>individually inspected</strong>. We only keep fruits with a generous size, intact skin, and perfectly soft flesh. This manual sorting guarantees consistent quality, batch after batch.</p><h2>Two Exceptional Varieties</h2><ul><li><strong>Pure Medjool</strong> — the date in its most noble form, with absolutely no additives</li><li><strong>Pista-Velvet</strong> — a gourmet creation where the date is delicately filled with a creamy pistachio and biscuit filling, for a premium indulgent experience</li></ul><p>Every ZABRA box is a gesture of elegance — perfect to gift or to savor.</p>"
+            },
+            "recipe": {
+                "title": "Recipe Ideas",
+                "content": "<h2>Energizing Smoothie Bowl</h2><p>A healthy, indulgent, and filling breakfast.</p><ul><li><strong>4</strong> ZABRA Medjool dates, pitted</li><li>1 ripe banana</li><li>150 ml plain yogurt</li><li>Toppings: granola, fresh fruit, chia seeds</li></ul><p>Blend the dates, banana, and yogurt until smooth and creamy. Pour into a bowl and top with your favorites. A treat <strong>ready in 5 minutes</strong>.</p><h2>Date Spread</h2><p>A natural, healthy alternative to refined sugar.</p><ul><li><strong>6</strong> pitted Medjool dates</li><li>80 ml hot water</li><li>A pinch of cinnamon</li></ul><p>Soak the dates in hot water for 10 minutes, then blend until smooth. Spread on pancakes, crêpes, or toast. Keeps for <strong>one week in the fridge</strong>.</p><h2>Immunity Booster</h2><p>Blend <strong>3 dates</strong> with a banana, a piece of fresh ginger, and 200 ml of almond milk. This powerful smoothie strengthens your natural defenses and provides lasting energy throughout the day.</p>"
+            },
+            "orders": {
+                "title": "Your Orders",
+                "content": "<p>Access your personal account to manage your ZABRA Medjool dates purchases.</p><h2>What You Can Do</h2><ul><li><strong>View</strong> your order history</li><li><strong>Track</strong> your deliveries in real time</li><li><strong>Reorder</strong> your favorite varieties (Pure or Pista-Velvet)</li><li><strong>Gift</strong> a ZABRA box to loved ones</li></ul><p>Log in to access all these features. Don't have an account yet? Create one in seconds.</p>"
+            }
+        }
+    }
+}

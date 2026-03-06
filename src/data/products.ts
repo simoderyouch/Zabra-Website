@@ -1,0 +1,35 @@
+export const products = [
+    {
+        id: 'essaouira',
+        regionName: 'Essaouira',
+        name: 'Argan Oil',
+        image: '/images/argan_product.png',
+        link: '/products/argan-oil',
+        color: 'rgba(212, 175, 55, 0.6)', // Gold/yellowish
+        position: 'top-[10%] right-[70%]', // Left side of Essaouira
+        mapDot: { cx: 306, cy: 173 }, // Centroid
+        linePath: 'M 306 173 Q 230 150 10 150' // Extend further left to meet card
+    },
+    {
+        id: 'beni-mellal',
+        regionName: 'Beni Mellal',
+        name: 'Olive Oil',
+        image: '/images/oil_product.png',
+        link: '/products/olive-oil',
+        color: 'rgba(212, 175, 55, 0.6)', // Gold/yellowish
+        position: 'top-[1%] left-[100%]', // Top right of Beni Mellal
+        mapDot: { cx: 380, cy: 148 }, // Centroid
+        linePath: 'M 380 148 Q 440 100 650 120' // Extend further right
+    },
+    {
+        id: 'errachidia',
+        regionName: 'Errachidia',
+        name: 'Dates',
+        image: '/images/date_product.png',
+        link: '/products/dates',
+        color: 'rgba(212, 175, 55, 0.6)', // Gold/yellowish
+        position: 'top-[44%] left-[85%]', // Right of Errachidia
+        mapDot: { cx: 410, cy: 194 }, // Centroid
+        linePath: 'M 410 194 Q 480 200 550 260' // Extend further right
+    }
+];
