@@ -97,8 +97,8 @@ export default function TerroirSection() {
                             ZABRA brings you:
                         </p>
                         <ul className="list-disc pl-5 text-base lg:text-lg text-[#555] leading-relaxed space-y-2">
-                            <li><strong className="text-[#1A1A1A] font-semibold">Fresh olive oil</strong> from Beni Mellal</li>
-                            <li><strong className="text-[#1A1A1A] font-semibold">Pure argan oil</strong> from the Haha region-Essaouira</li>
+                            <li><strong className="text-[#1A1A1A] font-semibold">Fresh olive oil</strong> from Sraghna, Beni Mellal</li>
+                            <li><strong className="text-[#1A1A1A] font-semibold">Pure argan oil</strong> from the Haha region, Essaouira</li>
                             <li><strong className="text-[#1A1A1A] font-semibold">Premium Medjool dates</strong> from the Ziz Valley, Errachidia</li>
                         </ul>
                         <p className="text-base lg:text-lg text-[#555] leading-relaxed">

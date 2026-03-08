@@ -104,7 +104,7 @@ export default function ProductsPage(props: { params: Promise<{ category: string
         { key: 'category', label: 'Category', value: data.categoryLabel },
         { key: 'extraction', label: 'Extraction', value: data.extraction },
         { key: 'texture', label: 'Texture', value: data.texture },
-        { key: 'formats', label: 'Formats', value: data.formats },
+        // { key: 'formats', label: 'Formats', value: data.formats },
         // { key: 'acidityLevel', label: 'Acidity Level', value: data.acidityLevel },
         { key: 'conditionement', label: 'Packaging', value: data.conditionement },
         { key: 'conservation', label: 'Conservation', value: data.conservation },
@@ -172,7 +172,7 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                                 </div>
 
                                 {/* Spec Grid */}
-                                <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-2 lg:gap-3 mb-6 flex-shrink-0">
+                                <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-2 lg:gap-3 mb-6 flex-shrink-0">
                                     {specs.map((spec) => (
                                         <div
                                             key={spec.key}
