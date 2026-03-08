@@ -40,7 +40,7 @@ export default function StoreProductCard({ volume, category, price, image }: Sto
             <div className="absolute inset-0 bg-gradient-to-b from-[rgba(212,175,55,0.03)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none" />
 
             {/* Product Image */}
-            <div className="relative w-full h-36 mb-3 flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-[rgba(212,175,55,0.03)]">
+            <div className="relative w-full h-36 mb-2 flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-[rgba(212,175,55,0.03)]">
                 {image ? (
                     <div className="relative w-24 h-32 group-hover:scale-110 transition-transform duration-700 ease-out">
                         <Image
@@ -56,7 +56,7 @@ export default function StoreProductCard({ volume, category, price, image }: Sto
             </div>
 
             {/* Volume Badge */}
-            <div className="relative z-10 inline-flex items-center px-3 py-1 bg-[#1A1A1A] text-white text-[11px] font-bold uppercase tracking-wider rounded-full mb-3 shadow-sm">
+            <div className="relative z-10 inline-flex items-center px-3 py-1 bg-[#1A1A1A] text-white text-[11px] font-bold uppercase tracking-wider rounded-full  shadow-sm">
                 {volume}
             </div>
 

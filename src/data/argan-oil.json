@@ -1,0 +1,71 @@
+{
+    "title": "PURE ARGAN OIL",
+    "image": "/images/argan_product.png",
+    "sideNav": [
+        {
+            "id": "order",
+            "label": "Order"
+        },
+        {
+            "id": "discover",
+            "label": "Discover"
+        },
+        {
+            "id": "why-zabira",
+            "label": "Why ZABRA"
+        },
+        {
+            "id": "recipe",
+            "label": "Recipes & Care"
+        }
+    ],
+    "categoryLabel": "Pure Argan Oil",
+    "extraction": "Cold pressed",
+    "texture": "Light · Nutty",
+    "formats": "50 ml · 100 ml · 250 ml · 500 ml",
+    "acidityLevel": "Not applicable",
+    "conditionement": "Opaque glass / Food-grade steel",
+    "conservation": "24 months — cool place",
+    "variants": [
+        {
+            "volume": "250 ml (Culinary)",
+            "price": "Not specified"
+        },
+        {
+            "volume": "500 ml (Culinary)",
+            "price": "Not specified"
+        }
+    ],
+    "specialVariants": [
+        {
+            "title": "COSMETIC ARGAN",
+            "volume": "50 ml",
+            "price": "Not specified",
+            "category": "Cosmetic"
+        },
+        {
+            "title": "COSMETIC ARGAN",
+            "volume": "100 ml",
+            "price": "Not specified",
+            "category": "Cosmetic"
+        }
+    ],
+    "pages": {
+        "discover": {
+            "title": "Discover Argan Oil",
+            "content": "<p>ZABRA argan oil is extracted from the fruits of <strong>ancestral argan trees</strong> in the Souss region of southwestern Morocco — a millennia-old tree classified as a UNESCO World Heritage species. Our oil is available in two distinct versions, each with its own unique properties.</p><h2>Cosmetic Argan</h2><p>Obtained through cold pressing <strong>without roasting</strong>, this version retains the full range of its active compounds. Its light, non-greasy texture absorbs quickly into the skin for deep hydration. It is exceptionally rich in:</p><ul><li><strong>Vitamin E</strong> — a powerful anti-aging antioxidant</li><li><strong>Essential fatty acids</strong> (omega-6 and omega-9)</li><li><strong>Schottenol</strong> — a rare molecule that promotes cellular regeneration</li></ul><h2>Culinary Argan</h2><p>The kernels are delicately <strong>roasted</strong> before pressing, revealing an intense nutty flavor and a deep amber color. This oil elevates your dishes — a simple drizzle over couscous, a salad, or grilled fish transforms every bite into a unique taste experience.</p><h2>A Biodiversity Treasure</h2><p>Our argan trees grow in the protected forests of <strong>Essaouira</strong>, classified as a biosphere reserve. Each tree produces barely a few liters of oil per year, giving every bottle exceptional value.</p>"
+        },
+        "why-zabira": {
+            "title": "The ZABRA Argan Excellence",
+            "content": "<p>Argan oil is one of the most counterfeited products in the world. At ZABRA, we have made <strong>absolute authenticity</strong> our core promise.</p><h2>Personal Kernel Selection</h2><p>Every batch of kernels is <strong>inspected and hand-selected</strong>. We systematically discard any kernels that are damaged, immature, or of insufficient quality. This rigorous sorting guarantees a pure oil, free from bitterness or off-odors.</p><h2>Supervised Cold Pressing</h2><p>Extraction is done exclusively through <strong>mechanical cold pressing</strong>, without chemical solvents or excessive heat. The temperature never exceeds 45°C, preserving the full spectrum of nutrients and active compounds.</p><h2>Zero Waste Philosophy</h2><p>Our process valorizes <strong>100% of the argan fruit</strong>:</p><ul><li><strong>Pure oil</strong> — the premium product you receive</li><li><strong>Argan paste (Amlou)</strong> — a delicious spread with honey and almonds</li><li><strong>Dry scrub</strong> — a natural body exfoliant</li></ul><p>Choosing ZABRA means supporting a transparent supply chain that respects the land, local communities, and the environment.</p>"
+        },
+        "recipe": {
+            "title": "Uses & Care Routines",
+            "content": "<h2>Restorative Hair Mask</h2><p>A deep treatment to revive dry and damaged hair.</p><ul><li><strong>2 tbsp</strong> ZABRA cosmetic argan oil</li><li>1 tbsp pure honey</li><li>1 egg yolk</li></ul><p>Mix and apply to damp hair, from roots to ends. Wrap in a warm towel and leave for <strong>30 minutes</strong>. Rinse with a gentle shampoo. Repeat once a week.</p><h2>Anti-Aging Face Serum</h2><p>Apply <strong>3 to 4 drops</strong> of cosmetic argan oil to a clean, slightly damp face, morning and evening. Massage with upward circular motions. The <strong>Schottenol</strong> naturally present in the oil stimulates cellular regeneration and visibly reduces fine lines.</p><h2>Hand & Nail Care</h2><p>Massage a few drops into your hands and cuticles before bed. Argan oil strengthens brittle nails and deeply softens dry hands.</p><h2>In the Kitchen: Amlou</h2><p>Blend roasted almonds with ZABRA culinary argan oil and honey until you get a smooth, creamy paste. This traditional Berber recipe is enjoyed at breakfast, spread on warm bread — an absolute delight.</p>"
+        },
+        "orders": {
+            "title": "Your Orders",
+            "content": "<p>Find all your ZABRA argan oil purchases — both cosmetic and culinary — in your personal account.</p><h2>What You Can Do</h2><ul><li><strong>View</strong> your order history</li><li><strong>Track</strong> your shipments in real time</li><li><strong>Reorder</strong> your favorite products with one click</li><li><strong>Manage</strong> your delivery addresses</li></ul><p>Log in to your account to access all these features. Our customer service team is also available to answer your questions.</p>"
+        }
+    }
+}

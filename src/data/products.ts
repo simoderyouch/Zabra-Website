@@ -1,7 +1,7 @@
 export const products = [
     {
         id: 'essaouira',
-        regionName: 'Essaouira',
+        regionName: 'Haha - Essaouira',
         name: 'Argan Oil',
         image: '/images/argan_product.png',
         link: '/products/argan-oil',
@@ -12,7 +12,7 @@ export const products = [
     },
     {
         id: 'beni-mellal',
-        regionName: 'Beni Mellal',
+        regionName: 'Sraghna - Beni Mellal',
         name: 'Olive Oil',
         image: '/images/oil_product.png',
         link: '/products/olive-oil',
@@ -23,8 +23,8 @@ export const products = [
     },
     {
         id: 'errachidia',
-        regionName: 'Errachidia',
-        name: 'Dates',
+        regionName: 'Ziz Valley - Errachidia',
+        name: 'Mejhoul Dates',
         image: '/images/date_product.png',
         link: '/products/dates',
         color: 'rgba(212, 175, 55, 0.6)', // Gold/yellowish

@@ -27,8 +27,8 @@ export default function ProductCard({ product, activeRegion, setActiveRegion }: 
 
             {/* Product Info */}
             <div className="flex flex-col flex-grow text-left justify-center">
-                <span className="text-[11px] lg:text-[12px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-1">{product.regionName}</span>
-                <h3 className="font-extrabold text-gray-900 text-xl lg:text-2xl mb-4 leading-tight tracking-tight">{product.name}</h3>
+                <span className="text-[11px] lg:text-[12px] font-bold text-gray-400 w-[7rem] uppercase tracking-[0.2em] mb-1">{product.regionName}</span>
+                <h3 className="font-extrabold text-gray-900 w-[12rem] text-xl lg:text-2xl mb-4 leading-tight tracking-tight">{product.name}</h3>
 
                 {/* Order Button with Icon */}
                 <Link

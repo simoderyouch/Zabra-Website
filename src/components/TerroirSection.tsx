@@ -72,7 +72,7 @@ export default function TerroirSection() {
     return (
         <section className="relative w-full h-screen min-h-[800px]  bg-[#FDFBF7] overflow-hidden flex flex-col items-center justify-center">
 
-            <div className="mx-auto px-4 sm:px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row gap-16 lg:gap-8 items-start w-full h-full max-w-[1800px]">
+            <div className="mx-auto px-4 sm:px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row gap-16 lg:gap-8 items-start w-full h-full max-w-[18500px]">
 
                 {/* Left Column: Text Content */}
                 <div className="text-left z-10 relative mt-[4rem] flex flex-col justify-center max-w-[600px] mx-auto lg:mx-0 order-2 lg:order-1 lg:pl-12 lg:pr-8">
@@ -82,7 +82,7 @@ export default function TerroirSection() {
                         From Morocco&apos;s Finest Regions
                     </div>
 
-                    <h1 className="text-3xl md:text-5xl lg:text-[3.25rem] font-bold text-[#1A1A1A] mb-6 leading-[1.08] tracking-tight">
+                    <h1 className="text-3xl md:text-5xl lg:text-[3rem] font-bold text-[#1A1A1A] mb-6 leading-[1.08] tracking-tight">
                         Pure Moroccan Terroir,<br />
                         <span className="bg-gradient-to-r from-[#1A1A1A] via-[#4A4A4A] to-[rgba(160,130,30,1)] bg-clip-text text-transparent">
                             Expertly Selected.
@@ -90,14 +90,22 @@ export default function TerroirSection() {
                     </h1>
 
                     {/* Gold accent line */}
-                    <div className="h-1 w-14 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.15)] rounded-full mb-6" />
+                    <div className="h-1 w-22 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.15)] rounded-full mb-6" />
 
                     <div className="space-y-4">
                         <p className="text-base lg:text-lg text-[#555] leading-relaxed">
-                            ZABRA brings you <strong className="text-[#1A1A1A] font-semibold">cold-pressed olive oil</strong> from Beni Mellal, <strong className="text-[#1A1A1A] font-semibold">pure argan oil</strong> from the argan forests of Essaouira, and <strong className="text-[#1A1A1A] font-semibold">hand-picked Medjool dates</strong> from the Ziz Valley — each sourced at its peak, directly from the land.
+                            ZABRA brings you:
+                        </p>
+                        <ul className="list-disc pl-5 text-base lg:text-lg text-[#555] leading-relaxed space-y-2">
+                            <li><strong className="text-[#1A1A1A] font-semibold">Fresh olive oil</strong> from Beni Mellal</li>
+                            <li><strong className="text-[#1A1A1A] font-semibold">Pure argan oil</strong> from the Haha region-Essaouira</li>
+                            <li><strong className="text-[#1A1A1A] font-semibold">Premium Medjool dates</strong> from the Ziz Valley, Errachidia</li>
+                        </ul>
+                        <p className="text-base lg:text-lg text-[#555] leading-relaxed">
+                            Each product is sourced directly from its region of origin and selected at its peak quality.
                         </p>
                         <p className="text-base lg:text-lg text-[#555] leading-relaxed">
-                            Every product is personally selected for quality and packaged in <strong className="text-[#1A1A1A] font-semibold">protective, travel-ready</strong> materials so it reaches you exactly as nature intended.
+                            Every item is carefully packaged in protective, travel-ready materials, ensuring it reaches you safely while preserving its natural freshness and authenticity.
                         </p>
                     </div>
 
@@ -117,7 +125,7 @@ export default function TerroirSection() {
                 </div>
 
                 {/* Right Column: Map Container */}
-                <div className=" w-full relative z-0 flex justify-center  -ml-[8rem] mt-[3rem]    items-start order-1 lg:order-2">
+                <div className=" w-full relative z-0 flex justify-center  -ml-[10rem] mt-[3rem]    items-start order-1 lg:order-2">
                     {/* Map explicitly sized to act as anchor for edge cards */}
                     <div className="relative w-full max-w-[380px] lg:max-w-[500px] xl:max-w-[580px] aspect-[566/603]">
                         <InteractiveMap activeRegion={activeRegion} setActiveRegion={handleSetActiveRegion} />

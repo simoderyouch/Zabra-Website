@@ -1,0 +1,65 @@
+{
+    "title": "MEDJOOL DATES",
+    "image": "/images/date_product.png",
+    "sideNav": [
+        {
+            "id": "order",
+            "label": "Order"
+        },
+        {
+            "id": "discover",
+            "label": "Discover"
+        },
+        {
+            "id": "why-zabira",
+            "label": "Why ZABRA"
+        },
+        {
+            "id": "recipe",
+            "label": "Recipes"
+        },
+        {
+            "id": "orders",
+            "label": "My Orders"
+        }
+    ],
+    "categoryLabel": "Premium Medjool Dates",
+    "extraction": "Hand-harvested",
+    "texture": "Soft, caramelized",
+    "formats": "500 g",
+    "acidityLevel": "Not applicable",
+    "conditionement": "Premium durable packaging",
+    "conservation": "24 months — cool place",
+    "variants": [
+        {
+            "volume": "500 g",
+            "price": "Not specified"
+        }
+    ],
+    "specialVariants": [
+        {
+            "title": "PISTA-VELVET",
+            "volume": "500 g",
+            "price": "Not specified",
+            "category": "Gourmet — Pistachio-stuffed dates"
+        }
+    ],
+    "pages": {
+        "discover": {
+            "title": "Discover Medjool Dates",
+            "content": "<p>The Medjool is considered the <strong>queen of dates</strong> — a noble and generous fruit cultivated for millennia in the oases of the Moroccan desert. Our dates come from the <strong>family palm groves of Errachidia</strong>, in the Ziz Valley, where the arid climate and rich soils create ideal conditions for an exceptional fruit.</p><h2>A Unique Flavor Profile</h2><p>Each ZABRA Medjool date offers a <strong>soft, melt-in-your-mouth texture</strong>, with naturally caramelized notes and an intense sweetness that never becomes cloying. Its generous size and thin skin distinguish it from all other varieties.</p><h2>Nutritional Benefits</h2><p>Far more than a treat, the Medjool date is a true <strong>superfood</strong>:</p><ul><li><strong>Magnesium & Potassium</strong> — help regulate blood pressure</li><li><strong>Natural fiber</strong> — promotes healthy digestion</li><li><strong>Quick energy</strong> — ideal before or after exercise</li><li><strong>Zero cholesterol</strong> and zero added fats</li></ul><p>It's the perfect snack — natural, nourishing, and absolutely delicious.</p>"
+        },
+        "why-zabira": {
+            "title": "The ZABRA Difference",
+            "content": "<p>In a market flooded with dates of varying quality, ZABRA stands as a benchmark for <strong>selection and traceability</strong>.</p><h2>Second Season Harvest</h2><p>We wait for the <strong>second season</strong> of maturation — the moment when natural sugar content reaches its peak. This patience yields a date that is sweeter, more melt-in-your-mouth, and more aromatic than early harvests.</p><h2>Piece-by-Piece Selection</h2><p>Every single date is <strong>individually inspected</strong>. We only keep fruits with a generous size, intact skin, and perfectly soft flesh. This manual sorting guarantees consistent quality, batch after batch.</p><h2>Two Exceptional Varieties</h2><ul><li><strong>Pure Medjool</strong> — the date in its most noble form, with absolutely no additives</li><li><strong>Pista-Velvet</strong> — a gourmet creation where the date is delicately filled with a creamy pistachio and biscuit filling, for a premium indulgent experience</li></ul><p>Every ZABRA box is a gesture of elegance — perfect to gift or to savor.</p>"
+        },
+        "recipe": {
+            "title": "Recipe Ideas",
+            "content": "<h2>Energizing Smoothie Bowl</h2><p>A healthy, indulgent, and filling breakfast.</p><ul><li><strong>4</strong> ZABRA Medjool dates, pitted</li><li>1 ripe banana</li><li>150 ml plain yogurt</li><li>Toppings: granola, fresh fruit, chia seeds</li></ul><p>Blend the dates, banana, and yogurt until smooth and creamy. Pour into a bowl and top with your favorites. A treat <strong>ready in 5 minutes</strong>.</p><h2>Date Spread</h2><p>A natural, healthy alternative to refined sugar.</p><ul><li><strong>6</strong> pitted Medjool dates</li><li>80 ml hot water</li><li>A pinch of cinnamon</li></ul><p>Soak the dates in hot water for 10 minutes, then blend until smooth. Spread on pancakes, crêpes, or toast. Keeps for <strong>one week in the fridge</strong>.</p><h2>Immunity Booster</h2><p>Blend <strong>3 dates</strong> with a banana, a piece of fresh ginger, and 200 ml of almond milk. This powerful smoothie strengthens your natural defenses and provides lasting energy throughout the day.</p>"
+        },
+        "orders": {
+            "title": "Your Orders",
+            "content": "<p>Access your personal account to manage your ZABRA Medjool dates purchases.</p><h2>What You Can Do</h2><ul><li><strong>View</strong> your order history</li><li><strong>Track</strong> your deliveries in real time</li><li><strong>Reorder</strong> your favorite varieties (Pure or Pista-Velvet)</li><li><strong>Gift</strong> a ZABRA box to loved ones</li></ul><p>Log in to access all these features. Don't have an account yet? Create one in seconds.</p>"
+        }
+    }
+}

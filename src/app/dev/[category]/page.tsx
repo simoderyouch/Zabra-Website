@@ -63,38 +63,6 @@ export default function ProductsPage(props: { params: Promise<{ category: string
     const [activeTab, setActiveTab] = useState('order');
     const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay({ delay: 3000, stopOnInteraction: true })]);
 
-    // Render "Coming Soon" for anything other than olive oil
-    if (params.category !== 'olive-oil') {
-        return (
-            <main className="bg-[#FDFBF7] relative flex flex-col h-[calc(100vh-130px)] overflow-hidden ">
-                {/* Subtle background pattern */}
-                <div className="absolute inset-0 opacity-[0.015] pointer-events-none"
-                    style={{
-                        backgroundImage: `radial-gradient(circle at 1px 1px, #1A1A1A 1px, transparent 0)`,
-                        backgroundSize: '40px 40px',
-                    }}
-                />
-                <div className="container mx-auto px-6 h-full flex flex-col items-center justify-center relative z-10 animate-fade-in">
-                    <div className="text-center max-w-lg mb-[10vh]">
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.2)] rounded-full text-xs font-bold text-[rgba(160,130,30,1)] uppercase tracking-widest mb-6">
-                            <Leaf className="w-3.5 h-3.5" />
-                            In Development
-                        </div>
-                        <h1 className="text-4xl lg:text-6xl font-serif font-bold text-[#1A1A1A] tracking-tight mb-4">
-                            Coming Soon
-                        </h1>
-                        <div className="flex justify-center mb-6">
-                            <div className="h-1 w-16 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.2)] rounded-full mb-2" />
-                        </div>
-                        <p className="text-gray-500 font-sans leading-relaxed text-lg lg:text-xl">
-                            We are carefully crafting this section to ensure the same level of excellence as our products. Please check back later.
-                        </p>
-                    </div>
-                </div>
-            </main>
-        );
-    }
-
     // If the category from URL doesn't exist in our JSON data, trigger Next.js 404 page
     if (!data) {
         notFound();

@@ -12,10 +12,17 @@ export default function Navbar() {
         <nav className="w-full  top-0 left-0 right-0 z-50 bg-[#FDFBF7] border-b border-gray-200/50  transition-all duration-300">
             <div className="container mx-auto px-6 py-5 lg:px-12 lg:py-6 flex items-center justify-between max-w-[1400px]">
 
-                {/* Logo */}
-                <Link href="/" className="flex-shrink-0 transition-transform duration-300 hover:scale-[1.03] active:scale-95">
-                    <Image src="/logo.svg" alt="Zabra Logo" width={250} height={80} className="w-auto h-12 sm:h-16 lg:h-26" priority />
-                </Link>
+                {/* Logo & Slogan */}
+                <div className="flex items-center gap-4 lg:gap-6">
+                    <Link href="/" className="flex-shrink-0 transition-transform duration-300 hover:scale-[1.03] active:scale-95">
+                        <Image src="/logo.svg" alt="Zabra Logo" width={250} height={80} className="w-auto h-12 sm:h-16 lg:h-20" priority />
+                    </Link>
+                    <div className="hidden sm:flex flex-col justify-center text-[13px] sm:text-[10px] lg:text-[13px] font-semibold text-[#555] tracking-[0.2em] uppercase leading-tight border-l border-gray-300 pl-4 lg:pl-6 py-1">
+                        <span>Three Lands</span>
+                        <span>One Origin</span>
+                        <span className="text-[rgba(212,175,55,0.9)] font-bold mt-0.5">Morocco</span>
+                    </div>
+                </div>
 
                 {/* Navigation Wrapper */}
                 <div className="hidden md:flex flex-row items-center gap-6 lg:gap-8 text-[13px] lg:text-[14px] font-bold text-[#1A1A1A] uppercase tracking-widest relative z-10">
@@ -23,11 +30,11 @@ export default function Navbar() {
                         <span>Home</span>
                         <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[rgba(212,175,55,0.6)] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <Link href="/about" className="hover:text-[rgba(212,175,55,0.6)] transition-colors duration-300 relative group">
+                    <Link href="/about-us" className="hover:text-[rgba(212,175,55,0.6)] transition-colors duration-300 relative group">
                         <span>About Us</span>
                         <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[rgba(212,175,55,0.6)] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <Link href="/contact" className="hover:text-[rgba(212,175,55,0.6)] transition-colors duration-300 relative group">
+                    <Link href="/contact-us" className="hover:text-[rgba(212,175,55,0.6)] transition-colors duration-300 relative group">
                         <span>Contact Us</span>
                         <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[rgba(212,175,55,0.6)] transition-all duration-300 group-hover:w-full"></span>
                     </Link>

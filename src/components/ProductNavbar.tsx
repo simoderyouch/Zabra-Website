@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 export default function ProductNavbar() {
     return (
-        <div className="absolute top-29 left-0 right-0 z-40 flex justify-center pointer-events-none mt-2 transition-all duration-300 hidden md:flex">
+        <div className="absolute top-24 left-0 right-0 z-40 flex justify-center pointer-events-none mt-2 transition-all duration-300 hidden md:flex">
             <div className="bg-white/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-white/50 rounded-full h-14 px-8 flex items-center justify-center gap-10 pointer-events-auto transition-transform duration-500 hover:bg-white/95 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
                 <ProductLink href="/products/olive-oil" label="Olive Oil" />
                 <ProductLink href="/products/argan-oil" label="Argan Oil" />
-                <ProductLink href="/products/dates" label="Dates" />
-                <ProductLink href="/products/pack" label="Pack" />
+                <ProductLink href="/products/dates" label="Mejhoul Dates" />
+                <ProductLink href="/products/gift" label="Gift Sets" />
             </div>
         </div>
     );
