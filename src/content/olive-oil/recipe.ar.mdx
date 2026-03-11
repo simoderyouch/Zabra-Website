@@ -1,0 +1,64 @@
+import Accordion from '@/components/mdx/Accordion'
+
+<h2 className='flex items-center mt-2 mb-1'>
+  <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className='inline-block ml-3 text-[rgba(212,175,55,0.9)] w-6 h-6'>
+    <path d='M12 12c-2-2.67-4-4-4-6a4 4 0 0 1 8 0c0 2-2 3.33-4 6Z'></path>
+    <path d='M12 21a8 8 0 0 0 8-8c0-4.42-4-7-4-7s-.5.5-2 2c-1.5-2-4-5-4-5S6 8.58 6 13a8 8 0 0 0 8 8Z'></path>
+  </svg>
+  تتبيلة الفلفل المشوي المغربية
+</h2>
+
+<Accordion 
+  summaryPreview="اشوي فلفلاً أخضر أو أحمر أو أصفر حتى تتفحم القشرة، ثم تبّله بزيت زيتون زابرا."
+  fullText={<>
+    <p className='leading-relaxed mb-3'>مقبلة مغربية كلاسيكية مليئة بالنكهات المدخنة.</p>
+    <ul className='list-inside mb-4'>
+      <li>اشوي فلفلاً أخضر أو أحمر أو أصفر حتى تتفحم القشرة.</li>
+      <li>أزل القشرة المحترقة وقطّع الفلفل إلى شرائح رقيقة.</li>
+      <li>ضعه في وعاء وغطّه بسخاء بـ<strong>زيت زيتون زابرا البكر الممتاز</strong>.</li>
+      <li>أضف الثوم المهروس والبقدونس المفروم والملح البحري والفلفل الأسود.</li>
+      <li>اتركه يتبّل قبل التقديم.</li>
+    </ul>
+  </>}
+/>
+
+<h2 className='flex items-center mt-2 mb-1'>
+  <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className='inline-block ml-3 text-[rgba(212,175,55,0.9)] w-6 h-6'>
+    <path d='M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z'></path>
+  </svg>
+  طقس الصحة اليومي
+</h2>
+
+<Accordion 
+  summaryPreview="ملعقة كبيرة من زيت الزيتون البكر الممتاز كل صباح على الريق تقدم فوائد رائعة"
+  fullText={<>
+    <p className='leading-relaxed mb-3'>ملعقة كبيرة من زيت الزيتون البكر الممتاز كل صباح على الريق تقدم فوائد رائعة:</p>
+    <ul className='list-inside mb-4'>
+      <li>يدعم <strong>الهضم</strong> ويحمي بطانة المعدة</li>
+      <li>يعزز <strong>صحة القلب</strong> من خلال الأحماض الدهنية أوميغا-9</li>
+      <li>يرطب البشرة من الداخل لبشرة مشرقة</li>
+    </ul>
+  </>}
+/>
+
+<h2 className='flex items-center mt-2 mb-1'>
+  <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className='inline-block ml-3 text-[rgba(212,175,55,0.9)] w-6 h-6'>
+    <polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'></polygon>
+  </svg>
+  صلصة زابرا المميزة
+</h2>
+
+<Accordion 
+  summaryPreview="امزج زيت زيتون زابرا البكر الممتاز مع خل البلسميك ولمسة من خردل ديجون"
+  fullText={<>
+    <p className='leading-relaxed mb-3'>صلصة بسيطة وأنيقة لأي سلطة أو مقبلة.</p>
+    <ul className='list-inside mb-4'>
+      <li><strong>زيت زيتون زابرا البكر الممتاز</strong></li>
+      <li>خل بلسميك</li>
+      <li>لمسة من خردل ديجون</li>
+      <li>قطرة عسل</li>
+    </ul>
+  </>}
+/>
+
+<p className='leading-relaxed mb-3 italic'>تبّل بالملح البحري والفلفل الأسود.</p>

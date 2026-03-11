@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import InteractiveMap from './InteractiveMap';
 import ProductCard from './ProductCard';
-import { products } from '../data/products';
+import { getProducts } from '../data/products';
+import { useTranslation } from '@/context/LanguageContext';
 
 export default function TerroirSection() {
     const [activeRegion, setActiveRegionState] = useState<string | null>(null);
@@ -11,6 +12,8 @@ export default function TerroirSection() {
     const autoPlayRef = useRef<NodeJS.Timeout | null>(null);
     const currentIndexRef = useRef(-1);
     const isPausedRef = useRef(false);
+    const { t, locale } = useTranslation();
+    const products = getProducts(locale as 'en' | 'fr' | 'ar');
 
     // Auto-play logic
     useEffect(() => {
@@ -70,22 +73,22 @@ export default function TerroirSection() {
     }, []);
 
     return (
-        <section className="relative w-full h-screen min-h-[800px]  bg-[#FDFBF7] overflow-hidden flex flex-col items-center justify-center">
+        <section className="relative w-full h-[calc(100vh-100px)]  max-h-[calc(100vh-100px)]  bg-zabra-cream overflow-hidden flex flex-col items-center justify-center">
 
             <div className="mx-auto px-4 sm:px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row gap-16 lg:gap-8 items-start w-full h-full max-w-[18500px]">
 
                 {/* Left Column: Text Content */}
                 <div className="text-left z-10 relative mt-[4rem] flex flex-col justify-center max-w-[600px] mx-auto lg:mx-0 order-2 lg:order-1 lg:pl-12 lg:pr-8">
                     {/* Premium badge */}
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.25)] rounded-full text-xs font-bold text-[rgba(160,130,30,1)] uppercase tracking-[0.15em] mb-5 w-fit">
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,1)]/[0-9]* rounded-full text-xs font-bold text-[rgba(160,130,30,1)] uppercase tracking-[0.15em] mb-5 w-fit">
                         <span className="w-1.5 h-1.5 rounded-full bg-[rgba(212,175,55,0.8)]" />
-                        From Morocco&apos;s Finest Regions
+                        {t('terroir.badge')}
                     </div>
 
-                    <h1 className="text-3xl md:text-5xl lg:text-[3rem] font-bold text-[#1A1A1A] mb-6 leading-[1.08] tracking-tight">
-                        Pure Moroccan Terroir,<br />
-                        <span className="bg-gradient-to-r from-[#1A1A1A] via-[#4A4A4A] to-[rgba(160,130,30,1)] bg-clip-text text-transparent">
-                            Expertly Selected.
+                    <h1 className="text-3xl md:text-5xl lg:text-[3rem] font-bold text-zabra-dark mb-6 leading-[1.08] tracking-tight">
+                        {t('terroir.headlineLine1')}<br />
+                        <span className="bg-gradient-to-r from-zabra-dark via-[#4A4A4A] to-[rgba(160,130,30,1)] bg-clip-text text-transparent">
+                            {t('terroir.headlineLine2')}
                         </span>
                     </h1>
 
@@ -94,18 +97,18 @@ export default function TerroirSection() {
 
                     <div className="space-y-4">
                         <p className="text-base lg:text-lg text-[#555] leading-relaxed">
-                            ZABRA brings you:
+                            {t('terroir.intro')}
                         </p>
                         <ul className="list-disc pl-5 text-base lg:text-lg text-[#555] leading-relaxed space-y-2">
-                            <li><strong className="text-[#1A1A1A] font-semibold">Fresh olive oil</strong> from Sraghna, Beni Mellal</li>
-                            <li><strong className="text-[#1A1A1A] font-semibold">Pure argan oil</strong> from the Haha region, Essaouira</li>
-                            <li><strong className="text-[#1A1A1A] font-semibold">Premium Medjool dates</strong> from the Ziz Valley, Errachidia</li>
+                            <li><strong className="text-zabra-dark font-semibold">{t('terroir.bullet1prefix')}</strong> {t('terroir.bullet1suffix')}</li>
+                            <li><strong className="text-zabra-dark font-semibold">{t('terroir.bullet2prefix')}</strong> {t('terroir.bullet2suffix')}</li>
+                            <li><strong className="text-zabra-dark font-semibold">{t('terroir.bullet3prefix')}</strong> {t('terroir.bullet3suffix')}</li>
                         </ul>
                         <p className="text-base lg:text-lg text-[#555] leading-relaxed">
-                            Each product is sourced directly from its region of origin and selected at its peak quality.
+                            {t('terroir.paragraph1')}
                         </p>
                         <p className="text-base lg:text-lg text-[#555] leading-relaxed">
-                            Every item is carefully packaged in protective, travel-ready materials, ensuring it reaches you safely while preserving its natural freshness and authenticity.
+                            {t('terroir.paragraph2')}
                         </p>
                     </div>
 
@@ -113,19 +116,19 @@ export default function TerroirSection() {
                     <div className="mt-8 flex items-center gap-4">
                         <a
                             href="/products/olive-oil"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1A1A1A] text-white text-sm font-semibold uppercase tracking-wider rounded-xl hover:bg-[#333] transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/15 hover:-translate-y-0.5"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-zabra-dark text-white text-sm font-semibold uppercase tracking-wider rounded-xl hover:bg-[#333] transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/15 hover:-translate-y-0.5"
                         >
-                            Explore Products
+                            {t('terroir.cta')}
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                         </a>
                         <span className="text-xs text-gray-400 font-medium tracking-wide hidden sm:inline">
-                            3 premium products
+                            {t('terroir.ctaSub')}
                         </span>
                     </div>
                 </div>
 
                 {/* Right Column: Map Container */}
-                <div className=" w-full relative z-0 flex justify-center  -ml-[10rem] mt-[3rem]    items-start order-1 lg:order-2">
+                <div className=" w-full relative z-0 flex justify-center  -ml-[10rem] mt-[5rem]    items-start order-1 lg:order-2">
                     {/* Map explicitly sized to act as anchor for edge cards */}
                     <div className="relative w-full max-w-[380px] lg:max-w-[500px] xl:max-w-[580px] aspect-[566/603]">
                         <InteractiveMap activeRegion={activeRegion} setActiveRegion={handleSetActiveRegion} />
@@ -192,7 +195,7 @@ export default function TerroirSection() {
                                     className="px-4 py-1.5 text-white text-sm font-semibold rounded-full w-max"
                                     style={{ backgroundColor: product.color.replace('0.6', '1') }}
                                 >
-                                    Order Now
+                                    {t('common.orderNow')}
                                 </span>
                             </div>
                         </div>

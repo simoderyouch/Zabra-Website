@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ProductNavbar from "@/components/ProductNavbar";
 import { CartProvider } from "@/context/CartContext";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,15 +28,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} `}
         suppressHydrationWarning
       >
-        <CartProvider>
-          <Navbar />
-          <ProductNavbar />
-          {children}
-        </CartProvider>
+        <LanguageProvider>
+          <CartProvider>
+            <Navbar />
+            <ProductNavbar />
+            {children}
+          </CartProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

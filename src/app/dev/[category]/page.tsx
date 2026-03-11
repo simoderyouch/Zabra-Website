@@ -79,11 +79,11 @@ export default function ProductsPage(props: { params: Promise<{ category: string
     ];
 
     return (
-        <main className="bg-[#FDFBF7] relative flex flex-col h-[calc(100vh-130px)] overflow-hidden pt-[88px]">
+        <main className="bg-zabra-cream relative flex flex-col h-[calc(100vh-130px)] overflow-hidden pt-[88px]">
             {/* Subtle background pattern */}
             <div className="absolute inset-0 opacity-[0.015] pointer-events-none"
                 style={{
-                    backgroundImage: `radial-gradient(circle at 1px 1px, #1A1A1A 1px, transparent 0)`,
+                    backgroundImage: `radial-gradient(circle at 1px 1px, var(--zabra-dark) 1px, transparent 0)`,
                     backgroundSize: '40px 40px',
                 }}
             />
@@ -104,7 +104,7 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                                     className={`
                                         justify-start whitespace-nowrap lg:w-full px-4 py-2.5 h-auto text-xs font-bold uppercase tracking-wider transition-all duration-300 rounded-xl
                                         ${activeTab === navItem.id
-                                            ? 'bg-[#1A1A1A] text-white shadow-lg shadow-black/10 hover:bg-[#333]'
+                                            ? 'bg-zabra-dark text-white shadow-lg shadow-black/10 hover:bg-[#333]'
                                             : 'text-gray-400 hover:text-gray-800 hover:bg-gray-100/60'
                                         }
                                     `}
@@ -125,11 +125,11 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                                 {/* Hero Section */}
                                 <div className="mb-4 flex-shrink-0">
                                     <div className="text-left">
-                                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.2)] rounded-full text-[10px] font-semibold text-[rgba(160,130,30,1)] uppercase tracking-widest mb-2">
+                                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,1)]/[0-9]* rounded-full text-[10px] font-semibold text-[rgba(160,130,30,1)] uppercase tracking-widest mb-2">
                                             <Leaf className="w-3 h-3" />
                                             Premium Quality
                                         </div>
-                                        <h1 className="text-2xl lg:text-4xl font-serif font-bold text-[#1A1A1A] tracking-tight mb-2">
+                                        <h1 className="text-2xl lg:text-4xl font-serif font-bold text-zabra-dark tracking-tight mb-2">
                                             {data.title}
                                         </h1>
                                         <div className="h-1 w-12 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.2)] rounded-full mb-2" />
@@ -146,12 +146,12 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                                             key={spec.key}
                                             className="flex flex-col items-center justify-center text-center p-2 lg:p-3 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-100 hover:border-[rgba(212,175,55,0.3)] hover:shadow-md hover:shadow-[rgba(212,175,55,0.04)] transition-all duration-300 group"
                                         >
-                                            <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[rgba(212,175,55,0.08)] flex items-center justify-center text-[rgba(170,140,40,1)] group-hover:bg-[rgba(212,175,55,0.15)] transition-colors duration-300 mb-1.5">
+                                            <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[rgba(212,175,55,0.08)] flex items-center justify-center text-[rgba(160,130,30,1)] group-hover:bg-[rgba(212,175,55,0.15)] transition-colors duration-300 mb-1.5">
                                                 {SPEC_ICONS[spec.key]}
                                             </div>
                                             <div className="min-w-0 w-full px-1">
                                                 <p className="text-[9px] lg:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">{spec.label}</p>
-                                                <p className="text-xs font-semibold text-[#1A1A1A] truncate">{spec.value}</p>
+                                                <p className="text-xs font-semibold text-zabra-dark truncate">{spec.value}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -159,7 +159,7 @@ export default function ProductsPage(props: { params: Promise<{ category: string
 
                                 {/* Section Title */}
                                 <div className="flex items-center gap-4 mb-4 flex-shrink-0">
-                                    <h2 className="text-xl lg:text-2xl font-serif font-bold text-[#1A1A1A] tracking-tight">Available Formats</h2>
+                                    <h2 className="text-xl lg:text-2xl font-serif font-bold text-zabra-dark tracking-tight">Available Formats</h2>
                                     <div className="flex-1 h-px bg-gradient-to-r from-gray-200 to-transparent" />
                                 </div>
 
@@ -193,20 +193,20 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                             </>
                         ) : (
                             <div className="w-full lg:pl-16 py-8 animate-fade-in bg-white/40 rounded-3xl p-6 lg:p-12 mb-10">
-                                <h1 className="text-3xl lg:text-5xl font-serif font-bold text-[#1A1A1A] tracking-tight mb-4">
+                                <h1 className="text-3xl lg:text-5xl font-serif font-bold text-zabra-dark tracking-tight mb-4">
                                     {data.pages[activeTab]?.title}
                                 </h1>
                                 <div className="h-1 w-16 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.2)] rounded-full mb-8" />
                                 <div
                                     className="prose prose-lg lg:prose-xl max-w-none font-sans text-gray-600
-                                        prose-headings:font-serif prose-headings:text-[#1A1A1A] prose-headings:tracking-tight
+                                        prose-headings:font-serif prose-headings:text-zabra-dark prose-headings:tracking-tight
                                         prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
                                         prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
                                         prose-p:leading-relaxed prose-p:mb-4
-                                        prose-strong:text-[#1A1A1A] prose-strong:font-semibold
+                                        prose-strong:text-zabra-dark prose-strong:font-semibold
                                         prose-ul:my-4 prose-ul:space-y-2
                                         prose-li:text-gray-600
-                                        prose-li:marker:text-[rgba(212,175,55,0.7)]"
+                                        prose-li:marker:text-[rgba(212,175,55,0.9)]"
                                     dangerouslySetInnerHTML={{ __html: data.pages[activeTab]?.content || '' }}
                                 />
                             </div>

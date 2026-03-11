@@ -1,65 +1,197 @@
 {
-    "title": "MEDJOOL DATES",
-    "image": "/images/date_product.png",
-    "sideNav": [
-        {
-            "id": "order",
-            "label": "Order"
-        },
-        {
-            "id": "discover",
-            "label": "Discover"
-        },
-        {
-            "id": "why-zabira",
-            "label": "Why ZABRA"
-        },
-        {
-            "id": "recipe",
-            "label": "Recipes"
-        },
-        {
-            "id": "orders",
-            "label": "My Orders"
+    "en": {
+        "title": "MEDJOOL DATES",
+        "image": "/images/date_product.png",
+        "sideNav": [
+            {
+                "id": "order",
+                "label": "Order"
+            },
+            {
+                "id": "discover",
+                "label": "Discover"
+            },
+            {
+                "id": "why-zabira",
+                "label": "Why ZABRA"
+            },
+            {
+                "id": "recipe",
+                "label": "Recipes"
+            },
+            {
+                "id": "orders",
+                "label": "My Orders"
+            }
+        ],
+        "categoryLabel": "Premium Medjool Dates",
+        "extraction": "Hand-harvested",
+        "texture": "Soft, caramelized",
+        "formats": "500 g",
+        "acidityLevel": "Not applicable",
+        "conditionement": "Premium durable packaging",
+        "conservation": "24 months — cool place",
+        "variants": [
+            {
+                "volume": "500 g",
+                "price": "Not specified"
+            }
+        ],
+        "specialVariants": [
+            {
+                "title": "PISTA-VELVET",
+                "volume": "500 g",
+                "price": "Not specified",
+                "category": "Gourmet — Pistachio-stuffed dates"
+            }
+        ],
+        "pages": {
+            "discover": {
+                "title": "Discover Medjool Dates",
+                "content": "<p>The Medjool is considered the <strong>queen of dates</strong> — a noble and generous fruit cultivated for millennia in the oases of the Moroccan desert. Our dates come from the <strong>family palm groves of Errachidia</strong>, in the Ziz Valley, where the arid climate and rich soils create ideal conditions for an exceptional fruit.</p><h2>A Unique Flavor Profile</h2><p>Each ZABRA Medjool date offers a <strong>soft, melt-in-your-mouth texture</strong>, with naturally caramelized notes and an intense sweetness that never becomes cloying. Its generous size and thin skin distinguish it from all other varieties.</p><h2>Nutritional Benefits</h2><p>Far more than a treat, the Medjool date is a true <strong>superfood</strong>:</p><ul><li><strong>Magnesium & Potassium</strong> — help regulate blood pressure</li><li><strong>Natural fiber</strong> — promotes healthy digestion</li><li><strong>Quick energy</strong> — ideal before or after exercise</li><li><strong>Zero cholesterol</strong> and zero added fats</li></ul><p>It's the perfect snack — natural, nourishing, and absolutely delicious.</p>"
+            },
+            "why-zabira": {
+                "title": "The ZABRA Difference",
+                "content": "<p>In a market flooded with dates of varying quality, ZABRA stands as a benchmark for <strong>selection and traceability</strong>.</p><h2>Second Season Harvest</h2><p>We wait for the <strong>second season</strong> of maturation — the moment when natural sugar content reaches its peak. This patience yields a date that is sweeter, more melt-in-your-mouth, and more aromatic than early harvests.</p><h2>Piece-by-Piece Selection</h2><p>Every single date is <strong>individually inspected</strong>. We only keep fruits with a generous size, intact skin, and perfectly soft flesh. This manual sorting guarantees consistent quality, batch after batch.</p><h2>Two Exceptional Varieties</h2><ul><li><strong>Pure Medjool</strong> — the date in its most noble form, with absolutely no additives</li><li><strong>Pista-Velvet</strong> — a gourmet creation where the date is delicately filled with a creamy pistachio and biscuit filling, for a premium indulgent experience</li></ul><p>Every ZABRA box is a gesture of elegance — perfect to gift or to savor.</p>"
+            },
+            "recipe": {
+                "title": "Recipe Ideas",
+                "content": "<h2>Energizing Smoothie Bowl</h2><p>A healthy, indulgent, and filling breakfast.</p><ul><li><strong>4</strong> ZABRA Medjool dates, pitted</li><li>1 ripe banana</li><li>150 ml plain yogurt</li><li>Toppings: granola, fresh fruit, chia seeds</li></ul><p>Blend the dates, banana, and yogurt until smooth and creamy. Pour into a bowl and top with your favorites. A treat <strong>ready in 5 minutes</strong>.</p><h2>Date Spread</h2><p>A natural, healthy alternative to refined sugar.</p><ul><li><strong>6</strong> pitted Medjool dates</li><li>80 ml hot water</li><li>A pinch of cinnamon</li></ul><p>Soak the dates in hot water for 10 minutes, then blend until smooth. Spread on pancakes, crêpes, or toast. Keeps for <strong>one week in the fridge</strong>.</p><h2>Immunity Booster</h2><p>Blend <strong>3 dates</strong> with a banana, a piece of fresh ginger, and 200 ml of almond milk. This powerful smoothie strengthens your natural defenses and provides lasting energy throughout the day.</p>"
+            },
+            "orders": {
+                "title": "Your Orders",
+                "content": "<p>Access your personal account to manage your ZABRA Medjool dates purchases.</p><h2>What You Can Do</h2><ul><li><strong>View</strong> your order history</li><li><strong>Track</strong> your deliveries in real time</li><li><strong>Reorder</strong> your favorite varieties (Pure or Pista-Velvet)</li><li><strong>Gift</strong> a ZABRA box to loved ones</li></ul><p>Log in to access all these features. Don't have an account yet? Create one in seconds.</p>"
+            }
         }
-    ],
-    "categoryLabel": "Premium Medjool Dates",
-    "extraction": "Hand-harvested",
-    "texture": "Soft, caramelized",
-    "formats": "500 g",
-    "acidityLevel": "Not applicable",
-    "conditionement": "Premium durable packaging",
-    "conservation": "24 months — cool place",
-    "variants": [
-        {
-            "volume": "500 g",
-            "price": "Not specified"
+    },
+    "fr": {
+        "title": "DATTES MEDJOOL",
+        "image": "/images/date_product.png",
+        "sideNav": [
+            {
+                "id": "order",
+                "label": "Commander"
+            },
+            {
+                "id": "discover",
+                "label": "Découvrir"
+            },
+            {
+                "id": "why-zabira",
+                "label": "Pourquoi ZABRA"
+            },
+            {
+                "id": "recipe",
+                "label": "Recettes"
+            },
+            {
+                "id": "orders",
+                "label": "Mes Commandes"
+            }
+        ],
+        "categoryLabel": "Dattes Medjool Premium",
+        "extraction": "Récoltées à la main",
+        "texture": "Moelleuses, caramélisées",
+        "formats": "500 g",
+        "acidityLevel": "Non applicable",
+        "conditionement": "Emballage premium durable",
+        "conservation": "24 mois — endroit frais",
+        "variants": [
+            {
+                "volume": "500 g",
+                "price": "Non spécifié"
+            }
+        ],
+        "specialVariants": [
+            {
+                "title": "PISTA-VELVET",
+                "volume": "500 g",
+                "price": "Non spécifié",
+                "category": "Gourmet — Dattes fourrées à la pistache"
+            }
+        ],
+        "pages": {
+            "discover": {
+                "title": "Découvrir les Dattes Medjool",
+                "content": "<p>La Medjool est considérée comme la <strong>reine des dattes</strong> — un fruit noble et généreux cultivé depuis des millénaires dans les oasis du désert marocain. Nos dattes proviennent des <strong>palmeraies familiales d'Errachidia</strong>, dans la Vallée du Ziz, où le climat aride et les sols riches créent des conditions idéales pour un fruit d'exception.</p><h2>Un Profil Gustatif Unique</h2><p>Chaque datte Medjool ZABRA offre une <strong>texture fondante</strong>, avec des notes naturellement caramélisées et une douceur intense qui ne devient jamais écœurante. Sa taille généreuse et sa peau fine la distinguent de toutes les autres variétés.</p><h2>Bienfaits Nutritionnels</h2><p>Bien plus qu'une friandise, la datte Medjool est un véritable <strong>super-aliment</strong> :</p><ul><li><strong>Magnésium et Potassium</strong> — aident à réguler la tension artérielle</li><li><strong>Fibres naturelles</strong> — favorisent une digestion saine</li><li><strong>Énergie rapide</strong> — idéale avant ou après l'exercice</li><li><strong>Zéro cholestérol</strong> et zéro graisses ajoutées</li></ul><p>C'est l'encas parfait — naturel, nourrissant et absolument délicieux.</p>"
+            },
+            "why-zabira": {
+                "title": "La Différence ZABRA",
+                "content": "<p>Dans un marché inondé de dattes de qualité variable, ZABRA s'impose comme une référence en matière de <strong>sélection et traçabilité</strong>.</p><h2>Récolte de Seconde Saison</h2><p>Nous attendons la <strong>seconde saison</strong> de maturation — le moment où la teneur en sucres naturels atteint son apogée. Cette patience donne une datte plus sucrée, plus fondante et plus aromatique que les récoltes précoces.</p><h2>Sélection Pièce par Pièce</h2><p>Chaque datte est <strong>individuellement inspectée</strong>. Nous ne gardons que les fruits d'une taille généreuse, à la peau intacte et à la chair parfaitement moelleuse. Ce tri manuel garantit une qualité constante, lot après lot.</p><h2>Deux Variétés d'Exception</h2><ul><li><strong>Medjool Pure</strong> — la datte dans sa forme la plus noble, sans aucun additif</li><li><strong>Pista-Velvet</strong> — une création gourmande où la datte est délicatement garnie d'une farce crémeuse à la pistache et au biscuit, pour une expérience gourmande premium</li></ul><p>Chaque coffret ZABRA est un geste d'élégance — parfait pour offrir ou pour savourer.</p>"
+            },
+            "recipe": {
+                "title": "Idées Recettes",
+                "content": "<h2>Smoothie Bowl Énergisant</h2><p>Un petit-déjeuner sain, gourmand et rassasiant.</p><ul><li><strong>4</strong> dattes Medjool ZABRA, dénoyautées</li><li>1 banane mûre</li><li>150 ml de yaourt nature</li><li>Toppings : granola, fruits frais, graines de chia</li></ul><p>Mixez les dattes, la banane et le yaourt jusqu'à obtenir une texture lisse et crémeuse. Versez dans un bol et garnissez selon vos envies. Un régal <strong>prêt en 5 minutes</strong>.</p><h2>Pâte de Dattes</h2><p>Une alternative naturelle et saine au sucre raffiné.</p><ul><li><strong>6</strong> dattes Medjool dénoyautées</li><li>80 ml d'eau chaude</li><li>Une pincée de cannelle</li></ul><p>Faites tremper les dattes dans l'eau chaude pendant 10 minutes, puis mixez jusqu'à obtenir une pâte lisse. Tartinez sur des pancakes, des crêpes ou des toasts. Se conserve <strong>une semaine au réfrigérateur</strong>.</p><h2>Booster d'Immunité</h2><p>Mixez <strong>3 dattes</strong> avec une banane, un morceau de gingembre frais et 200 ml de lait d'amande. Ce smoothie puissant renforce vos défenses naturelles et fournit une énergie durable tout au long de la journée.</p>"
+            },
+            "orders": {
+                "title": "Vos Commandes",
+                "content": "<p>Accédez à votre espace personnel pour gérer vos achats de dattes Medjool ZABRA.</p><h2>Ce que Vous Pouvez Faire</h2><ul><li><strong>Consulter</strong> votre historique de commandes</li><li><strong>Suivre</strong> vos livraisons en temps réel</li><li><strong>Recommander</strong> vos variétés préférées (Pure ou Pista-Velvet)</li><li><strong>Offrir</strong> un coffret ZABRA à vos proches</li></ul><p>Connectez-vous pour accéder à toutes ces fonctionnalités. Pas encore de compte ? Créez-en un en quelques secondes.</p>"
+            }
         }
-    ],
-    "specialVariants": [
-        {
-            "title": "PISTA-VELVET",
-            "volume": "500 g",
-            "price": "Not specified",
-            "category": "Gourmet — Pistachio-stuffed dates"
-        }
-    ],
-    "pages": {
-        "discover": {
-            "title": "Discover Medjool Dates",
-            "content": "<p>The Medjool is considered the <strong>queen of dates</strong> — a noble and generous fruit cultivated for millennia in the oases of the Moroccan desert. Our dates come from the <strong>family palm groves of Errachidia</strong>, in the Ziz Valley, where the arid climate and rich soils create ideal conditions for an exceptional fruit.</p><h2>A Unique Flavor Profile</h2><p>Each ZABRA Medjool date offers a <strong>soft, melt-in-your-mouth texture</strong>, with naturally caramelized notes and an intense sweetness that never becomes cloying. Its generous size and thin skin distinguish it from all other varieties.</p><h2>Nutritional Benefits</h2><p>Far more than a treat, the Medjool date is a true <strong>superfood</strong>:</p><ul><li><strong>Magnesium & Potassium</strong> — help regulate blood pressure</li><li><strong>Natural fiber</strong> — promotes healthy digestion</li><li><strong>Quick energy</strong> — ideal before or after exercise</li><li><strong>Zero cholesterol</strong> and zero added fats</li></ul><p>It's the perfect snack — natural, nourishing, and absolutely delicious.</p>"
-        },
-        "why-zabira": {
-            "title": "The ZABRA Difference",
-            "content": "<p>In a market flooded with dates of varying quality, ZABRA stands as a benchmark for <strong>selection and traceability</strong>.</p><h2>Second Season Harvest</h2><p>We wait for the <strong>second season</strong> of maturation — the moment when natural sugar content reaches its peak. This patience yields a date that is sweeter, more melt-in-your-mouth, and more aromatic than early harvests.</p><h2>Piece-by-Piece Selection</h2><p>Every single date is <strong>individually inspected</strong>. We only keep fruits with a generous size, intact skin, and perfectly soft flesh. This manual sorting guarantees consistent quality, batch after batch.</p><h2>Two Exceptional Varieties</h2><ul><li><strong>Pure Medjool</strong> — the date in its most noble form, with absolutely no additives</li><li><strong>Pista-Velvet</strong> — a gourmet creation where the date is delicately filled with a creamy pistachio and biscuit filling, for a premium indulgent experience</li></ul><p>Every ZABRA box is a gesture of elegance — perfect to gift or to savor.</p>"
-        },
-        "recipe": {
-            "title": "Recipe Ideas",
-            "content": "<h2>Energizing Smoothie Bowl</h2><p>A healthy, indulgent, and filling breakfast.</p><ul><li><strong>4</strong> ZABRA Medjool dates, pitted</li><li>1 ripe banana</li><li>150 ml plain yogurt</li><li>Toppings: granola, fresh fruit, chia seeds</li></ul><p>Blend the dates, banana, and yogurt until smooth and creamy. Pour into a bowl and top with your favorites. A treat <strong>ready in 5 minutes</strong>.</p><h2>Date Spread</h2><p>A natural, healthy alternative to refined sugar.</p><ul><li><strong>6</strong> pitted Medjool dates</li><li>80 ml hot water</li><li>A pinch of cinnamon</li></ul><p>Soak the dates in hot water for 10 minutes, then blend until smooth. Spread on pancakes, crêpes, or toast. Keeps for <strong>one week in the fridge</strong>.</p><h2>Immunity Booster</h2><p>Blend <strong>3 dates</strong> with a banana, a piece of fresh ginger, and 200 ml of almond milk. This powerful smoothie strengthens your natural defenses and provides lasting energy throughout the day.</p>"
-        },
-        "orders": {
-            "title": "Your Orders",
-            "content": "<p>Access your personal account to manage your ZABRA Medjool dates purchases.</p><h2>What You Can Do</h2><ul><li><strong>View</strong> your order history</li><li><strong>Track</strong> your deliveries in real time</li><li><strong>Reorder</strong> your favorite varieties (Pure or Pista-Velvet)</li><li><strong>Gift</strong> a ZABRA box to loved ones</li></ul><p>Log in to access all these features. Don't have an account yet? Create one in seconds.</p>"
+    },
+    "ar": {
+        "title": "تمور المجهول",
+        "image": "/images/date_product.png",
+        "sideNav": [
+            {
+                "id": "order",
+                "label": "طلب"
+            },
+            {
+                "id": "discover",
+                "label": "اكتشف"
+            },
+            {
+                "id": "why-zabira",
+                "label": "لماذا زابرا"
+            },
+            {
+                "id": "recipe",
+                "label": "وصفات"
+            },
+            {
+                "id": "orders",
+                "label": "طلباتي"
+            }
+        ],
+        "categoryLabel": "تمور مجهول فاخرة",
+        "extraction": "حصاد يدوي",
+        "texture": "طرية، مكرملة",
+        "formats": "500 غ",
+        "acidityLevel": "غير قابل للتطبيق",
+        "conditionement": "تغليف فاخر متين",
+        "conservation": "24 شهراً — مكان بارد",
+        "variants": [
+            {
+                "volume": "500 غ",
+                "price": "غير محدد"
+            }
+        ],
+        "specialVariants": [
+            {
+                "title": "بيستا-فيلفت",
+                "volume": "500 غ",
+                "price": "غير محدد",
+                "category": "ذواقة — تمور محشوة بالفستق"
+            }
+        ],
+        "pages": {
+            "discover": {
+                "title": "اكتشف تمور المجهول",
+                "content": "<p>يُعتبر المجهول <strong>ملكة التمور</strong> — فاكهة نبيلة وسخية تُزرع منذ آلاف السنين في واحات الصحراء المغربية. تمورنا تأتي من <strong>واحات النخيل العائلية في الراشيدية</strong>، في وادي زيز، حيث المناخ الجاف والتربة الغنية تخلق ظروفاً مثالية لفاكهة استثنائية.</p><h2>ملف نكهة فريد</h2><p>كل تمرة مجهول من زابرا تقدم <strong>قواماً ذائباً</strong>، مع نكهات مكرملة طبيعياً وحلاوة مكثفة لا تصبح أبداً ثقيلة. حجمها السخي وقشرتها الرقيقة تميزها عن جميع الأصناف الأخرى.</p><h2>فوائد غذائية</h2><p>أكثر من مجرد حلوى، تمرة المجهول هي <strong>طعام خارق</strong> حقيقي:</p><ul><li><strong>المغنيسيوم والبوتاسيوم</strong> — يساعدان في تنظيم ضغط الدم</li><li><strong>ألياف طبيعية</strong> — تعزز الهضم الصحي</li><li><strong>طاقة سريعة</strong> — مثالية قبل أو بعد التمرين</li><li><strong>صفر كوليسترول</strong> وصفر دهون مضافة</li></ul><p>إنها الوجبة الخفيفة المثالية — طبيعية، مغذية، ولذيذة تماماً.</p>"
+            },
+            "why-zabira": {
+                "title": "فرق زابرا",
+                "content": "<p>في سوق مليء بالتمور متفاوتة الجودة، تبرز زابرا كمرجع في <strong>الاختيار والتتبع</strong>.</p><h2>حصاد الموسم الثاني</h2><p>ننتظر <strong>الموسم الثاني</strong> من النضج — اللحظة التي يصل فيها محتوى السكر الطبيعي إلى ذروته. هذا الصبر ينتج تمرة أحلى وأكثر ذوباناً وعطراً من الحصاد المبكر.</p><h2>اختيار حبة بحبة</h2><p>كل تمرة <strong>تُفحص فردياً</strong>. نحتفظ فقط بالثمار ذات الحجم السخي والقشرة السليمة واللب الطري تماماً. هذا الفرز اليدوي يضمن جودة ثابتة، دفعة بعد دفعة.</p><h2>نوعان استثنائيان</h2><ul><li><strong>مجهول صافي</strong> — التمرة في أنبل أشكالها، بدون أي إضافات</li><li><strong>بيستا-فيلفت</strong> — إبداع ذوّاقي حيث تُحشى التمرة بلطف بحشوة كريمية من الفستق والبسكويت، لتجربة فاخرة لا تُنسى</li></ul><p>كل علبة زابرا هي لفتة أناقة — مثالية للإهداء أو للتذوق.</p>"
+            },
+            "recipe": {
+                "title": "أفكار وصفات",
+                "content": "<h2>وعاء سموذي منشط</h2><p>فطور صحي، شهي ومشبع.</p><ul><li><strong>4</strong> تمرات مجهول زابرا، منزوعة النوى</li><li>موزة واحدة ناضجة</li><li>150 مل زبادي طبيعي</li><li>إضافات: جرانولا، فواكه طازجة، بذور شيا</li></ul><p>اخلط التمور والموز والزبادي حتى تحصل على قوام ناعم وكريمي. صب في وعاء وزيّن بمفضلاتك. متعة <strong>جاهزة في 5 دقائق</strong>.</p><h2>معجون التمر</h2><p>بديل طبيعي وصحي للسكر المكرر.</p><ul><li><strong>6</strong> تمرات مجهول منزوعة النوى</li><li>80 مل ماء ساخن</li><li>رشة قرفة</li></ul><p>انقع التمور في الماء الساخن لمدة 10 دقائق، ثم اخلطها حتى تحصل على قوام ناعم. ادهنها على البانكيك أو الكريب أو التوست. يُحفظ <strong>لمدة أسبوع في الثلاجة</strong>.</p><h2>معزز المناعة</h2><p>اخلط <strong>3 تمرات</strong> مع موزة وقطعة زنجبيل طازج و200 مل حليب لوز. هذا السموذي القوي يعزز دفاعاتك الطبيعية ويمنحك طاقة مستدامة طوال اليوم.</p>"
+            },
+            "orders": {
+                "title": "طلباتك",
+                "content": "<p>ادخل إلى حسابك الشخصي لإدارة مشترياتك من تمور المجهول زابرا.</p><h2>ما يمكنك فعله</h2><ul><li><strong>عرض</strong> سجل طلباتك</li><li><strong>تتبع</strong> توصيلاتك في الوقت الفعلي</li><li><strong>إعادة طلب</strong> أصنافك المفضلة (صافي أو بيستا-فيلفت)</li><li><strong>إهداء</strong> علبة زابرا لأحبائك</li></ul><p>سجّل الدخول للوصول إلى جميع هذه الميزات. ليس لديك حساب بعد؟ أنشئ واحداً في ثوانٍ.</p>"
+            }
         }
     }
 }

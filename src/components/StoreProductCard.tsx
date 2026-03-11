@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/select"
 import { ShoppingCart, Check } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
+import { useTranslation } from '@/context/LanguageContext';
 
 interface StoreProductCardProps {
     volume: string;
@@ -26,6 +27,7 @@ export default function StoreProductCard({ volume, category, price, image }: Sto
     const [qty, setQty] = useState('01');
     const [added, setAdded] = useState(false);
     const { addItem } = useCart();
+    const { t } = useTranslation();
 
     const handleAddToCart = () => {
         addItem({ category, volume, price, image: image || '' }, parseInt(qty));
@@ -34,7 +36,7 @@ export default function StoreProductCard({ volume, category, price, image }: Sto
     };
 
     return (
-        <Card className="group relative flex flex-col items-center justify-between p-5 rounded-2xl border border-gray-100 bg-white/80 backdrop-blur-sm hover:bg-white hover:border-[rgba(212,175,55,0.25)] hover:shadow-xl hover:shadow-[rgba(212,175,55,0.06)] transition-all duration-500 min-w-[180px] overflow-hidden">
+        <Card className="group relative flex flex-col items-center justify-between p-5 rounded-2xl border border-gray-100 bg-white/80 backdrop-blur-sm hover:bg-white hover:border-[rgba(212,175,55,1)]/[0-9]* transition-all duration-500 min-w-[180px] overflow-hidden">
 
             {/* Subtle gradient overlay on hover */}
             <div className="absolute inset-0 bg-gradient-to-b from-[rgba(212,175,55,0.03)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none" />
@@ -51,12 +53,12 @@ export default function StoreProductCard({ volume, category, price, image }: Sto
                         />
                     </div>
                 ) : (
-                    <span className="text-gray-300 text-sm font-medium">No image</span>
+                    <span className="text-gray-300 text-sm font-medium">{t('common.noImage')}</span>
                 )}
             </div>
 
             {/* Volume Badge */}
-            <div className="relative z-10 inline-flex items-center px-3 py-1 bg-[#1A1A1A] text-white text-[11px] font-bold uppercase tracking-wider rounded-full  shadow-sm">
+            <div className="relative z-10 inline-flex items-center px-3 py-1 bg-zabra-dark text-white text-[11px] font-bold uppercase tracking-wider rounded-full  shadow-sm">
                 {volume}
             </div>
 
@@ -65,17 +67,17 @@ export default function StoreProductCard({ volume, category, price, image }: Sto
                 <p className="text-[10px] text-gray-400 font-bold tracking-[0.15em] uppercase">
                     {category}
                 </p>
-                <p className="text-xl font-bold text-[#1A1A1A] font-sans">
+                <p className="text-xl font-bold text-zabra-dark font-sans">
                     {price}
                 </p>
 
                 <div className="flex items-end gap-2 w-full mt-4 relative z-10">
                     {/* Qty Selector */}
                     <div className="flex flex-col gap-1">
-                        <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Qty</span>
+                        <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">{t('common.qty')}</span>
                         <Select defaultValue="01" onValueChange={setQty}>
-                            <SelectTrigger className="w-[70px] h-10 text-xs rounded-xl border-gray-200 focus:ring-[rgba(212,175,55,0.6)] focus:border-[rgba(212,175,55,0.4)]">
-                                <SelectValue placeholder="Qty" />
+                            <SelectTrigger className="w-[70px] h-10 text-xs rounded-xl border-gray-200 focus:ring-[rgba(212,175,55,0.6)] focus:border-[rgba(212,175,55,1)]/[0-9]*">
+                                <SelectValue placeholder={t('common.qty')} />
                             </SelectTrigger>
                             <SelectContent>
                                 <SelectItem value="01">01</SelectItem>
@@ -92,18 +94,18 @@ export default function StoreProductCard({ volume, category, price, image }: Sto
                         onClick={handleAddToCart}
                         className={`flex-1 h-10 text-[11px] font-bold uppercase tracking-wider rounded-xl transition-all duration-300 shadow-sm hover:shadow-md group/btn flex items-center justify-center gap-2 ${added
                             ? 'bg-green-500 text-white hover:bg-green-600'
-                            : 'bg-[#1A1A1A] text-white hover:bg-[rgba(212,175,55,0.9)] hover:text-[#1A1A1A]'
+                            : 'bg-zabra-dark text-white hover:bg-[rgba(212,175,55,0.9)] hover:text-zabra-dark'
                             }`}
                     >
                         {added ? (
                             <>
                                 <Check className="w-3.5 h-3.5" />
-                                Added!
+                                {t('common.added')}
                             </>
                         ) : (
                             <>
                                 <ShoppingCart className="w-3.5 h-3.5 transition-transform duration-300 group-hover/btn:scale-110" />
-                                Add to Cart
+                                {t('common.addToCart')}
                             </>
                         )}
                     </Button>

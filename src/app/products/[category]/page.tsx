@@ -9,9 +9,42 @@ import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { notFound } from 'next/navigation';
-import oliveOil from '@/data/olive-oil.json';
-import arganOil from '@/data/argan-oil.json';
-import dates from '@/data/dates.json';
+import dynamic from 'next/dynamic';
+import oliveOilData from '@/data/olive-oil.json';
+import arganOilData from '@/data/argan-oil.json';
+import datesData from '@/data/dates.json';
+import { useTranslation } from '@/context/LanguageContext';
+
+const contentMapEn: Record<string, Record<string, React.ComponentType>> = {
+    'olive-oil': {
+        'discover': dynamic(() => import('@/content/olive-oil/discover.mdx')),
+        'why-zabira': dynamic(() => import('@/content/olive-oil/why-zabira.mdx')),
+        'recipe': dynamic(() => import('@/content/olive-oil/recipe.mdx')),
+    }
+};
+
+const contentMapFr: Record<string, Record<string, React.ComponentType>> = {
+    'olive-oil': {
+        'discover': dynamic(() => import('@/content/olive-oil/discover.fr.mdx')),
+        'why-zabira': dynamic(() => import('@/content/olive-oil/why-zabira.fr.mdx')),
+        'recipe': dynamic(() => import('@/content/olive-oil/recipe.fr.mdx')),
+    }
+};
+
+const contentMapAr: Record<string, Record<string, React.ComponentType>> = {
+    'olive-oil': {
+        'discover': dynamic(() => import('@/content/olive-oil/discover.ar.mdx')),
+        'why-zabira': dynamic(() => import('@/content/olive-oil/why-zabira.ar.mdx')),
+        'recipe': dynamic(() => import('@/content/olive-oil/recipe.ar.mdx')),
+    }
+};
+
+const bilingualData: Record<string, any> = {
+    'olive-oil': oliveOilData,
+    'argan-oil': arganOilData,
+    'dates': datesData,
+};
+
 import {
     Droplets,
     Leaf,
@@ -39,11 +72,7 @@ type CategoryDataRecordType = Record<string, {
     pages: Record<string, { title: string; content: string }>;
 }>;
 
-const typedCategoryData: CategoryDataRecordType = {
-    'olive-oil': oliveOil,
-    'argan-oil': arganOil,
-    'dates': dates,
-} as unknown as CategoryDataRecordType;
+// Data is now loaded from bilingualData with locale key
 
 const SPEC_ICONS: Record<string, React.ReactNode> = {
     category: <Layers className="w-4 h-4" />,
@@ -59,9 +88,12 @@ import { use } from 'react';
 
 export default function ProductsPage(props: { params: Promise<{ category: string }> }) {
     const params = use(props.params);
-    const data = typedCategoryData[params.category];
+    const { t, locale, isRTL } = useTranslation();
+    const rawData = bilingualData[params.category];
+    const data = rawData ? rawData[locale as 'en' | 'fr' | 'ar'] : null;
+    const contentMap = locale === 'fr' ? contentMapFr : locale === 'ar' ? contentMapAr : contentMapEn;
     const [activeTab, setActiveTab] = useState('order');
-    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay({ delay: 3000, stopOnInteraction: true })]);
+    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start', direction: isRTL ? 'rtl' : 'ltr' }, [Autoplay({ delay: 3000, stopOnInteraction: true })]);
 
     // Render "Coming Soon" for anything other than olive oil
     if (params.category !== 'olive-oil') {
@@ -78,16 +110,16 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                     <div className="text-center max-w-lg mb-[10vh]">
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.2)] rounded-full text-xs font-bold text-[rgba(160,130,30,1)] uppercase tracking-widest mb-6">
                             <Leaf className="w-3.5 h-3.5" />
-                            In Development
+                            {t('products.inDevelopment')}
                         </div>
                         <h1 className="text-4xl lg:text-6xl font-serif font-bold text-[#1A1A1A] tracking-tight mb-4">
-                            Coming Soon
+                            {t('products.comingSoon')}
                         </h1>
                         <div className="flex justify-center mb-6">
                             <div className="h-1 w-16 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.2)] rounded-full mb-2" />
                         </div>
                         <p className="text-gray-500 font-sans leading-relaxed text-lg lg:text-xl">
-                            We are carefully crafting this section to ensure the same level of excellence as our products. Please check back later.
+                            {t('products.comingSoonDesc')}
                         </p>
                     </div>
                 </div>
@@ -100,14 +132,24 @@ export default function ProductsPage(props: { params: Promise<{ category: string
         notFound();
     }
 
+    const specLabelKeys: Record<string, string> = {
+        category: 'products.category',
+        extraction: 'products.extraction',
+        texture: 'products.texture',
+        formats: 'products.formats',
+        acidityLevel: 'products.acidityLevel',
+        conditionement: 'products.packaging',
+        conservation: 'products.conservation',
+    };
+
     const specs = [
-        { key: 'category', label: 'Category', value: data.categoryLabel },
-        { key: 'extraction', label: 'Extraction', value: data.extraction },
-        { key: 'texture', label: 'Texture', value: data.texture },
-        // { key: 'formats', label: 'Formats', value: data.formats },
-        // { key: 'acidityLevel', label: 'Acidity Level', value: data.acidityLevel },
-        { key: 'conditionement', label: 'Packaging', value: data.conditionement },
-        { key: 'conservation', label: 'Conservation', value: data.conservation },
+        { key: 'category', label: t('products.category'), value: data.categoryLabel },
+        { key: 'extraction', label: t('products.extraction'), value: data.extraction },
+        { key: 'texture', label: t('products.texture'), value: data.texture },
+        // { key: 'formats', label: t('products.formats'), value: data.formats },
+        // { key: 'acidityLevel', label: t('products.acidityLevel'), value: data.acidityLevel },
+        { key: 'conditionement', label: t('products.packaging'), value: data.conditionement },
+        { key: 'conservation', label: t('products.conservation'), value: data.conservation },
     ];
 
     return (
@@ -128,7 +170,7 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                     {/* LEFT — Sticky Vertical Nav */}
                     <div className="lg:w-44 flex-shrink-0 h-full flex flex-col">
                         <div className="sticky top-28 flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 h-full">
-                            {data.sideNav.map((navItem) => (
+                            {data.sideNav.map((navItem: any) => (
                                 <Button
                                     key={navItem.id}
                                     variant={activeTab === navItem.id ? 'default' : 'ghost'}
@@ -156,17 +198,17 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                             <>
                                 {/* Hero Section */}
                                 <div className="mb-4 flex-shrink-0">
-                                    <div className="text-left">
+                                    <div >
                                         <div className="inline-flex items-center gap-2 px-3 py-1 bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.2)] rounded-full text-[10px] font-semibold text-[rgba(160,130,30,1)] uppercase tracking-widest mb-2">
                                             <Leaf className="w-3 h-3" />
-                                            Premium Quality
+                                            {t('products.premiumQuality')}
                                         </div>
                                         <h1 className="text-2xl lg:text-4xl font-serif font-bold text-[#1A1A1A] tracking-tight mb-2">
                                             {data.title}
                                         </h1>
                                         <div className="h-1 w-12 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.2)] rounded-full mb-2" />
                                         <p className="text-gray-500 text-xs lg:text-sm font-sans leading-relaxed">
-                                            {data.categoryLabel} — Sourced with care, crafted for excellence.
+                                            {data.categoryLabel} — {t('products.sourcedWithCare')}
                                         </p>
                                     </div>
                                 </div>
@@ -191,28 +233,28 @@ export default function ProductsPage(props: { params: Promise<{ category: string
 
                                 {/* Section Title */}
                                 <div className="flex items-center gap-4 mb-4 flex-shrink-0">
-                                    <h2 className="text-xl lg:text-2xl font-serif font-bold text-[#1A1A1A] tracking-tight">Available Formats</h2>
+                                    <h2 className="text-xl lg:text-2xl font-serif font-bold text-[#1A1A1A] tracking-tight">{t('products.availableFormats')}</h2>
                                     <div className="flex-1 h-px bg-gradient-to-r from-gray-200 to-transparent" />
                                 </div>
 
                                 {/* Product Variant Cards Carousel */}
                                 <div className="relative w-full pb-2">
                                     <div className="overflow-hidden" ref={emblaRef}>
-                                        <div className="flex -ml-4">
+                                        <div className={`flex ${isRTL ? '-mr-4' : '-ml-4'}`}>
                                             {/* We spread variants to ensure we have enough items for a nice loop if there's less than 3 */}
-                                            {[...data.variants, ...(data.specialVariants || []), ...data.variants, ...(data.specialVariants || [])].map((v, i) => (
-                                                <div key={`variant-${i}`} className="flex-[0_0_100%] sm:flex-[0_0_50%] xl:flex-[0_0_33.333%] pl-4">
+                                            {[...data.variants, ...(data.specialVariants || []), ...data.variants, ...(data.specialVariants || [])].map((v: any, i: number) => (
+                                                <div key={`variant-${i}`} className={`flex-[0_0_100%] sm:flex-[0_0_50%] xl:flex-[0_0_33.333%] ${isRTL ? 'pr-4' : 'pl-4'}`}>
                                                     <div className="relative h-full">
-                                                        {(v as any).title && (
-                                                            <div className="absolute -top-3 left-4 z-10">
+                                                        {v.title && (
+                                                            <div className={`absolute -top-3 ${isRTL ? 'right-4' : 'left-4'} z-10`}>
                                                                 <span className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(180,150,40,0.9)] text-white text-[10px] font-bold uppercase tracking-wider rounded-full shadow-md">
-                                                                    {(v as any).title}
+                                                                    {v.title}
                                                                 </span>
                                                             </div>
                                                         )}
                                                         <StoreProductCard
                                                             volume={v.volume}
-                                                            category={(v as any).category || data.categoryLabel}
+                                                            category={v.category || data.categoryLabel}
                                                             price={v.price}
                                                             image={data.image}
                                                         />
@@ -226,7 +268,7 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                         ) : (
                             <div className="w-full lg:pl-16 py-8 animate-fade-in bg-white/40 rounded-3xl p-6 lg:p-12 mb-10">
                                 <h1 className="text-3xl lg:text-5xl font-serif font-bold text-[#1A1A1A] tracking-tight mb-4">
-                                    {data.pages[activeTab]?.title}
+                                    {data.pages?.[activeTab]?.title || data.sideNav.find((n: any) => n.id === activeTab)?.label}
                                 </h1>
                                 <div className="h-1 w-16 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.2)] rounded-full mb-8" />
                                 <div
@@ -239,9 +281,18 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                                         prose-ul:my-4 prose-ul:space-y-2
                                         prose-li:text-gray-600
                                         prose-li:marker:text-[rgba(212,175,55,0.7)]"
-                                    dangerouslySetInnerHTML={{ __html: data.pages[activeTab]?.content || '' }}
-                                />
+                                >
+                                    {contentMap[params.category]?.[activeTab] ? (
+                                        (() => {
+                                            const MdxContent = contentMap[params.category][activeTab];
+                                            return <MdxContent />;
+                                        })()
+                                    ) : (
+                                        <div dangerouslySetInnerHTML={{ __html: data.pages?.[activeTab]?.content || '' }} />
+                                    )}
+                                </div>
                             </div>
+
                         )}
                     </div>
                 </div>
