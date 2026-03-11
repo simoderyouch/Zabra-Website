@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslation } from '@/context/LanguageContext';
 
 export default function ProductCard({ product, activeRegion, setActiveRegion }: { product: any, activeRegion: string | null, setActiveRegion: (region: string | null) => void }) {
     const isActive = activeRegion === product.id;
+    const { t, isRTL } = useTranslation();
 
     return (
         <div
@@ -15,7 +19,7 @@ export default function ProductCard({ product, activeRegion, setActiveRegion }: 
             onMouseLeave={() => setActiveRegion(null)}
         >
             {/* Product Image */}
-            <div className={`relative w-28 h-28 lg:w-36 lg:h-36 mr-5 lg:mr-6 flex-shrink-0 transition-transform duration-500 ease-out ${isActive ? 'scale-110 drop-shadow-xl' : 'hover:scale-105 drop-shadow-md'}`}>
+            <div className={`relative w-28 h-28 lg:w-36 lg:h-36  ${isRTL ? 'ml-5 lg:ml-6 ' : 'mr-5 lg:mr-6'} flex-shrink-0 transition-transform duration-500 ease-out ${isActive ? 'scale-110 drop-shadow-xl' : 'hover:scale-105 drop-shadow-md'}`}>
                 <Image
                     src={product.image}
                     alt={product.name}
@@ -26,7 +30,7 @@ export default function ProductCard({ product, activeRegion, setActiveRegion }: 
             </div>
 
             {/* Product Info */}
-            <div className="flex flex-col flex-grow text-left justify-center">
+            <div className={`flex flex-col flex-grow text-left justify-center ${isRTL ? ' ml-5 lg:ml-6' : ''}`}>
                 <span className="text-[11px] lg:text-[12px] font-bold text-gray-400 w-[7rem] uppercase tracking-[0.2em] mb-1">{product.regionName}</span>
                 <h3 className="font-extrabold text-gray-900 w-[12rem] text-xl lg:text-2xl mb-4 leading-tight tracking-tight">{product.name}</h3>
 
@@ -37,7 +41,7 @@ export default function ProductCard({ product, activeRegion, setActiveRegion }: 
                     style={{ backgroundColor: product.color.replace('0.6', '1') }} // Solid color
                     onClick={(e) => { e.stopPropagation(); }}
                 >
-                    <span className="relative z-10 mr-2">Order Now</span>
+                    <span className="relative z-10 mr-2">{t('common.orderNow')}</span>
                     <svg
                         className="w-4 h-4 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1"
                         fill="none"
