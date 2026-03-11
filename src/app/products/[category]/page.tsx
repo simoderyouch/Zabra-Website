@@ -112,13 +112,13 @@ export default function ProductsPage(props: { params: Promise<{ category: string
                             <Leaf className="w-3.5 h-3.5" />
                             {t('products.inDevelopment')}
                         </div>
-                        <h1 className="text-4xl lg:text-6xl font-serif font-bold text-[#1A1A1A] tracking-tight mb-4">
+                        <h1 className="text-4xl lg:text-6xl font-bold text-[#1A1A1A] tracking-tight mb-4">
                             {t('products.comingSoon')}
                         </h1>
                         <div className="flex justify-center mb-6">
                             <div className="h-1 w-16 bg-gradient-to-r from-[rgba(212,175,55,0.9)] to-[rgba(212,175,55,0.2)] rounded-full mb-2" />
                         </div>
-                        <p className="text-gray-500 font-sans leading-relaxed text-lg lg:text-xl">
+                        <p className="text-gray-500  leading-relaxed text-lg lg:text-xl">
                             {t('products.comingSoonDesc')}
                         </p>
                     </div>
