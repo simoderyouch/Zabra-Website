@@ -46,6 +46,15 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  /* ZABRA Brand Tokens */
+  --color-zabra-dark: var(--zabra-dark);
+  --color-zabra-gold: var(--zabra-gold);
+  --color-zabra-gold-light: var(--zabra-gold-light);
+  --color-zabra-cream: var(--zabra-cream);
+  --color-zabra-nav: var(--zabra-nav);
+  --color-zabra-nav-from: var(--zabra-nav-from);
+  --color-zabra-nav-via: var(--zabra-nav-via);
 }
 
 :root {
@@ -81,6 +90,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* ZABRA Brand Colors */
+  --zabra-dark: #1e2a1f;
+  --zabra-gold: rgba(212, 175, 55, 0.9);
+  --zabra-gold-light: rgba(212, 175, 55, 0.08);
+  --zabra-cream: #FDFBF7;
+  --zabra-nav: #1e2a1f;
+  --zabra-nav-from: #0a1a0f;
+  --zabra-nav-via: #0f2818;
 }
 
 .dark {
@@ -178,4 +196,30 @@
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(212, 175, 55, 0.9);
+}
+
+/* RTL (Arabic) — use Cairo font */
+html[dir="rtl"] {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+/* RTL (Arabic) — right-align text but keep centered elements centered */
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] p,
+html[dir="rtl"] li,
+html[dir="rtl"] span {
+  text-align: right;
+}
+
+/* Keep centered elements centered in RTL */
+html[dir="rtl"] .text-center,
+html[dir="rtl"] .text-center h1,
+html[dir="rtl"] .text-center h2,
+html[dir="rtl"] .text-center h3,
+html[dir="rtl"] .text-center p,
+html[dir="rtl"] .text-center span {
+  text-align: center;
 }
